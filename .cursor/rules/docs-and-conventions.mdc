@@ -1,0 +1,10 @@
+---
+description: API docs location and structure; follow docs for conventions
+alwaysApply: true
+---
+
+# Docs and conventions
+
+- **API documentation** lives in **docs/api/**.
+- **Authoritative guide:** [docs/api/docs.md](docs/api/docs.md) — project structure, path aliases (`@/` for `src/`, `$/` for `db/`), config and env, running the API, and conventions.
+- When adding or changing API code (routes, DB, libs), follow the structure and conventions described there. Refer to the domain docs in docs/api/ (users.md, db.md, lib.md) as needed.
