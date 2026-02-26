@@ -13,9 +13,29 @@ Drizzle ORM, schema (tables/relations), and seeders. Client and config live in `
 
 ## Schema (tables and relations)
 
-Defined in `db/users.ts`; re-exported from `db/schema.ts` for Drizzle Kit and `$/schema` imports.
+Defined in `db/users.ts` and `db/locations.ts`; re-exported from `db/schema.ts` for Drizzle Kit and `$/schema` imports.
 
 ### Tables
+
+- **`continents`**
+  - `id` — identity PK
+  - `name` — text, not null
+  - `code` — varchar 2, not null, unique (AF, AN, AS, EU, NA, OC, SA)
+
+- **`countries`**
+  - `id` — identity PK
+  - `name` — text, not null
+  - `isoA2` — varchar 2, not null (ISO 3166-1 alpha-2)
+  - `isoA3` — varchar 3, not null (ISO 3166-1 alpha-3)
+  - `isoNumber` — bigint, not null (ISO 3166-1 numeric)
+  - `tld` — text, nullable
+  - `phoneCode` — text[], nullable (can contain multiple dial codes)
+  - `continentId` — FK → `continents.id`, nullable, on delete set null
+
+- **`states`**
+  - `id` — bigint identity PK
+  - `countryId` — FK → `countries.id`, not null, on delete cascade
+  - `name` — text, not null. Seed data includes Malaysia only (13 states + 3 federal territories).
 
 - **`users`**
   - `id` — identity PK
@@ -54,6 +74,8 @@ Defined in `db/users.ts`; re-exported from `db/schema.ts` for Drizzle Kit and `$
 
 ### Relations (Drizzle relations)
 
+- Continents ↔ countries: `continentId` (continent, countries).
+- Countries ↔ states: `countryId` (country, states).
 - Users ↔ user_relationships: `subjectUserId` / `objectUserId` (subject_user, object_user).
 - Users ↔ user_pregnancies: `userId`, `birthPregnancyId`.
 
@@ -62,8 +84,8 @@ Defined in `db/users.ts`; re-exported from `db/schema.ts` for Drizzle Kit and `$
 ## Seeders
 
 - **CLI:** `db/seeders/cli.ts` — `bun run db/seeders/cli.ts seed|clear|reset` (or via `bun run db:seed` etc.).
-- **Logic:** `db/seeders/index.ts` — `seed()` (runs user + relationship seeders), `clear()` (delete order below).
-- **Seed data:** `db/seeders/users.seeder.ts` — `seedUsers`, `seedUserRelationships` (e.g. Adam/Eve); uses `db/seeders/schemas.ts` for `relationshipSeedSchema` (by name: subjectFirstName/LastName, objectFirstName/LastName, type, isBiological, requireDifferentGender).
+- **Logic:** `db/seeders/index.ts` — `seed()` (runs user, relationship, **continents**, countries, states seeders), `clear()` (delete order below).
+- **Seed data:** `db/seeders/users.seeder.ts` — `seedUsers`, `seedUserRelationships` (e.g. Adam/Eve); uses `db/seeders/schemas.ts` for `relationshipSeedSchema` (by name: subjectFirstName/LastName, objectFirstName/LastName, type, isBiological, requireDifferentGender). `db/seeders/locations.seeder.ts` — **`seedContinents`** (7 continents from `db/seeders/data/continents.json`), **`seedCountries`** (ISO countries from `db/seeders/data/countries.json`, with `phoneCode` from dial codes, **`continentId`** from `db/seeders/data/country-continent.json`), `seedStates` (Malaysia only: 13 states + 3 federal territories).
 
 ### Clear order (respects FKs)
 
@@ -71,6 +93,9 @@ Defined in `db/users.ts`; re-exported from `db/schema.ts` for Drizzle Kit and `$
 2. Set `users.birthPregnancyId` to null
 3. Delete `user_pregnancies`
 4. Delete `users`
-5. Reset sequences: `users_id_seq`, `user_relationships_id_seq`, `user_pregnancies_id_seq`
+5. Delete `states`
+6. Delete `countries`
+7. Delete `continents`
+8. Reset sequences: `users_id_seq`, `user_relationships_id_seq`, `user_pregnancies_id_seq`, `states_id_seq`, `countries_id_seq`, **`continents_id_seq`**
 
 When adding new seed data or tables, keep this order in mind and update `clear()` and sequences if needed.

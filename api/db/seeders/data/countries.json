@@ -1,0 +1,3838 @@
+[
+  {
+    "name": "Afghanistan",
+    "isoA2": "AF",
+    "isoA3": "AFG",
+    "isoNumber": 4,
+    "tld": ".af",
+    "emoji": "🇦🇫",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/af.svg",
+    "dialCodes": [
+      "+93"
+    ],
+    "timezones": [
+      "GMT+4:30"
+    ]
+  },
+  {
+    "name": "Åland Islands",
+    "isoA2": "AX",
+    "isoA3": "ALA",
+    "isoNumber": 248,
+    "tld": ".ax",
+    "emoji": "🇦🇽",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/ax.svg",
+    "dialCodes": [
+      "+358"
+    ],
+    "timezones": [
+      "GMT+2"
+    ]
+  },
+  {
+    "name": "Albania",
+    "isoA2": "AL",
+    "isoA3": "ALB",
+    "isoNumber": 8,
+    "tld": ".al",
+    "emoji": "🇦🇱",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/al.svg",
+    "dialCodes": [
+      "+355"
+    ],
+    "timezones": [
+      "GMT+1"
+    ]
+  },
+  {
+    "name": "Algeria",
+    "isoA2": "DZ",
+    "isoA3": "DZA",
+    "isoNumber": 12,
+    "tld": ".dz",
+    "emoji": "🇩🇿",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/dz.svg",
+    "dialCodes": [
+      "+213"
+    ],
+    "timezones": [
+      "GMT+1"
+    ]
+  },
+  {
+    "name": "American Samoa",
+    "isoA2": "AS",
+    "isoA3": "ASM",
+    "isoNumber": 16,
+    "tld": ".as",
+    "emoji": "🇦🇸",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/as.svg",
+    "dialCodes": [
+      "+1 684"
+    ],
+    "timezones": [
+      "GMT-11"
+    ]
+  },
+  {
+    "name": "Andorra",
+    "isoA2": "AD",
+    "isoA3": "AND",
+    "isoNumber": 20,
+    "tld": ".ad",
+    "emoji": "🇦🇩",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/ad.svg",
+    "dialCodes": [
+      "+376"
+    ],
+    "timezones": [
+      "GMT+1"
+    ]
+  },
+  {
+    "name": "Angola",
+    "isoA2": "AO",
+    "isoA3": "AGO",
+    "isoNumber": 24,
+    "tld": ".ao",
+    "emoji": "🇦🇴",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/ao.svg",
+    "dialCodes": [
+      "+244"
+    ],
+    "timezones": [
+      "GMT+1"
+    ]
+  },
+  {
+    "name": "Anguilla",
+    "isoA2": "AI",
+    "isoA3": "AIA",
+    "isoNumber": 660,
+    "tld": ".ai",
+    "emoji": "🇦🇮",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/ai.svg",
+    "dialCodes": [
+      "+1264"
+    ],
+    "timezones": [
+      "GMT-4"
+    ]
+  },
+  {
+    "name": "Antarctica",
+    "isoA2": "AQ",
+    "isoA3": "ATA",
+    "isoNumber": 10,
+    "tld": ".aq",
+    "emoji": "🇦🇶",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/aq.svg",
+    "dialCodes": [
+      "+672"
+    ],
+    "timezones": [
+      "GMT+0",
+      "GMT+10",
+      "GMT+12",
+      "GMT+3",
+      "GMT+5",
+      "GMT+7",
+      "GMT+8",
+      "GMT-3"
+    ]
+  },
+  {
+    "name": "Antigua and Barbuda",
+    "isoA2": "AG",
+    "isoA3": "ATG",
+    "isoNumber": 28,
+    "tld": ".ag",
+    "emoji": "🇦🇬",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/ag.svg",
+    "dialCodes": [
+      "+1268"
+    ],
+    "timezones": [
+      "GMT-4"
+    ]
+  },
+  {
+    "name": "Argentina",
+    "isoA2": "AR",
+    "isoA3": "ARG",
+    "isoNumber": 32,
+    "tld": ".ar",
+    "emoji": "🇦🇷",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/ar.svg",
+    "dialCodes": [
+      "+54"
+    ],
+    "timezones": [
+      "GMT-3"
+    ]
+  },
+  {
+    "name": "Armenia",
+    "isoA2": "AM",
+    "isoA3": "ARM",
+    "isoNumber": 51,
+    "tld": ".am",
+    "emoji": "🇦🇲",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/am.svg",
+    "dialCodes": [
+      "+374"
+    ],
+    "timezones": [
+      "GMT+4"
+    ]
+  },
+  {
+    "name": "Aruba",
+    "isoA2": "AW",
+    "isoA3": "ABW",
+    "isoNumber": 533,
+    "tld": ".aw",
+    "emoji": "🇦🇼",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/aw.svg",
+    "dialCodes": [
+      "+297"
+    ],
+    "timezones": [
+      "GMT-4"
+    ]
+  },
+  {
+    "name": "Australia",
+    "isoA2": "AU",
+    "isoA3": "AUS",
+    "isoNumber": 36,
+    "tld": ".au",
+    "emoji": "🇦🇺",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/au.svg",
+    "dialCodes": [
+      "+61"
+    ],
+    "timezones": [
+      "GMT+10",
+      "GMT+10:30",
+      "GMT+8",
+      "GMT+8:45",
+      "GMT+9",
+      "GMT+9:30"
+    ]
+  },
+  {
+    "name": "Austria",
+    "isoA2": "AT",
+    "isoA3": "AUT",
+    "isoNumber": 40,
+    "tld": ".at",
+    "emoji": "🇦🇹",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/at.svg",
+    "dialCodes": [
+      "+43"
+    ],
+    "timezones": [
+      "GMT+1"
+    ]
+  },
+  {
+    "name": "Azerbaijan",
+    "isoA2": "AZ",
+    "isoA3": "AZE",
+    "isoNumber": 31,
+    "tld": ".az",
+    "emoji": "🇦🇿",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/az.svg",
+    "dialCodes": [
+      "+994"
+    ],
+    "timezones": [
+      "GMT+4"
+    ]
+  },
+  {
+    "name": "Bahamas",
+    "isoA2": "BS",
+    "isoA3": "BHS",
+    "isoNumber": 44,
+    "tld": ".bs",
+    "emoji": "🇧🇸",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/bs.svg",
+    "dialCodes": [
+      "+1242"
+    ],
+    "timezones": [
+      "GMT-5"
+    ]
+  },
+  {
+    "name": "Bahrain",
+    "isoA2": "BH",
+    "isoA3": "BHR",
+    "isoNumber": 48,
+    "tld": ".bh",
+    "emoji": "🇧🇭",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/bh.svg",
+    "dialCodes": [
+      "+973"
+    ],
+    "timezones": [
+      "GMT+3"
+    ]
+  },
+  {
+    "name": "Bangladesh",
+    "isoA2": "BD",
+    "isoA3": "BGD",
+    "isoNumber": 50,
+    "tld": ".bd",
+    "emoji": "🇧🇩",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/bd.svg",
+    "dialCodes": [
+      "+880"
+    ],
+    "timezones": [
+      "GMT+6"
+    ]
+  },
+  {
+    "name": "Barbados",
+    "isoA2": "BB",
+    "isoA3": "BRB",
+    "isoNumber": 52,
+    "tld": ".bb",
+    "emoji": "🇧🇧",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/bb.svg",
+    "dialCodes": [
+      "+1246"
+    ],
+    "timezones": [
+      "GMT-4"
+    ]
+  },
+  {
+    "name": "Belarus",
+    "isoA2": "BY",
+    "isoA3": "BLR",
+    "isoNumber": 112,
+    "tld": ".by",
+    "emoji": "🇧🇾",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/by.svg",
+    "dialCodes": [
+      "+375"
+    ],
+    "timezones": [
+      "GMT+3"
+    ]
+  },
+  {
+    "name": "Belgium",
+    "isoA2": "BE",
+    "isoA3": "BEL",
+    "isoNumber": 56,
+    "tld": ".be",
+    "emoji": "🇧🇪",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/be.svg",
+    "dialCodes": [
+      "+32"
+    ],
+    "timezones": [
+      "GMT+1"
+    ]
+  },
+  {
+    "name": "Belize",
+    "isoA2": "BZ",
+    "isoA3": "BLZ",
+    "isoNumber": 84,
+    "tld": ".bz",
+    "emoji": "🇧🇿",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/bz.svg",
+    "dialCodes": [
+      "+501"
+    ],
+    "timezones": [
+      "GMT-6"
+    ]
+  },
+  {
+    "name": "Benin",
+    "isoA2": "BJ",
+    "isoA3": "BEN",
+    "isoNumber": 204,
+    "tld": ".bj",
+    "emoji": "🇧🇯",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/bj.svg",
+    "dialCodes": [
+      "+229"
+    ],
+    "timezones": [
+      "GMT+1"
+    ]
+  },
+  {
+    "name": "Bermuda",
+    "isoA2": "BM",
+    "isoA3": "BMU",
+    "isoNumber": 60,
+    "tld": ".bm",
+    "emoji": "🇧🇲",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/bm.svg",
+    "dialCodes": [
+      "+1441"
+    ],
+    "timezones": [
+      "GMT-4"
+    ]
+  },
+  {
+    "name": "Bhutan",
+    "isoA2": "BT",
+    "isoA3": "BTN",
+    "isoNumber": 64,
+    "tld": ".bt",
+    "emoji": "🇧🇹",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/bt.svg",
+    "dialCodes": [
+      "+975"
+    ],
+    "timezones": [
+      "GMT+6"
+    ]
+  },
+  {
+    "name": "Bolivia, Plurinational State of",
+    "isoA2": "BO",
+    "isoA3": "BOL",
+    "isoNumber": 68,
+    "tld": ".bo",
+    "emoji": "🇧🇴",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/bo.svg",
+    "dialCodes": [
+      "+591"
+    ],
+    "timezones": [
+      "GMT-4"
+    ]
+  },
+  {
+    "name": "Bonaire, Sint Eustatius and Saba",
+    "isoA2": "BQ",
+    "isoA3": "BES",
+    "isoNumber": 535,
+    "tld": ".bq",
+    "emoji": "🇧🇶",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/bq.svg",
+    "dialCodes": [
+      "+599"
+    ],
+    "timezones": [
+      "GMT-4"
+    ]
+  },
+  {
+    "name": "Bosnia and Herzegovina",
+    "isoA2": "BA",
+    "isoA3": "BIH",
+    "isoNumber": 70,
+    "tld": ".ba",
+    "emoji": "🇧🇦",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/ba.svg",
+    "dialCodes": [
+      "+387"
+    ],
+    "timezones": [
+      "GMT+1"
+    ]
+  },
+  {
+    "name": "Botswana",
+    "isoA2": "BW",
+    "isoA3": "BWA",
+    "isoNumber": 72,
+    "tld": ".bw",
+    "emoji": "🇧🇼",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/bw.svg",
+    "dialCodes": [
+      "+267"
+    ],
+    "timezones": [
+      "GMT+2"
+    ]
+  },
+  {
+    "name": "Bouvet Island",
+    "isoA2": "BV",
+    "isoA3": "BVT",
+    "isoNumber": 74,
+    "tld": ".bv",
+    "emoji": "🇧🇻",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/bv.svg",
+    "dialCodes": [
+      "+47"
+    ],
+    "timezones": []
+  },
+  {
+    "name": "Brazil",
+    "isoA2": "BR",
+    "isoA3": "BRA",
+    "isoNumber": 76,
+    "tld": ".br",
+    "emoji": "🇧🇷",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/br.svg",
+    "dialCodes": [
+      "+55"
+    ],
+    "timezones": [
+      "GMT-2",
+      "GMT-3",
+      "GMT-4",
+      "GMT-5"
+    ]
+  },
+  {
+    "name": "British Indian Ocean Territory",
+    "isoA2": "IO",
+    "isoA3": "IOT",
+    "isoNumber": 86,
+    "tld": ".io",
+    "emoji": "🇮🇴",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/io.svg",
+    "dialCodes": [
+      "+246"
+    ],
+    "timezones": [
+      "GMT+6"
+    ]
+  },
+  {
+    "name": "Brunei Darussalam",
+    "isoA2": "BN",
+    "isoA3": "BRN",
+    "isoNumber": 96,
+    "tld": ".bn",
+    "emoji": "🇧🇳",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/bn.svg",
+    "dialCodes": [
+      "+673"
+    ],
+    "timezones": [
+      "GMT+8"
+    ]
+  },
+  {
+    "name": "Bulgaria",
+    "isoA2": "BG",
+    "isoA3": "BGR",
+    "isoNumber": 100,
+    "tld": ".bg",
+    "emoji": "🇧🇬",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/bg.svg",
+    "dialCodes": [
+      "+359"
+    ],
+    "timezones": [
+      "GMT+2"
+    ]
+  },
+  {
+    "name": "Burkina Faso",
+    "isoA2": "BF",
+    "isoA3": "BFA",
+    "isoNumber": 854,
+    "tld": ".bf",
+    "emoji": "🇧🇫",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/bf.svg",
+    "dialCodes": [
+      "+226"
+    ],
+    "timezones": [
+      "GMT+0"
+    ]
+  },
+  {
+    "name": "Burundi",
+    "isoA2": "BI",
+    "isoA3": "BDI",
+    "isoNumber": 108,
+    "tld": ".bi",
+    "emoji": "🇧🇮",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/bi.svg",
+    "dialCodes": [
+      "+257"
+    ],
+    "timezones": [
+      "GMT+2"
+    ]
+  },
+  {
+    "name": "Cabo Verde",
+    "isoA2": "CV",
+    "isoA3": "CPV",
+    "isoNumber": 132,
+    "tld": ".cv",
+    "emoji": "🇨🇻",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/cv.svg",
+    "dialCodes": [
+      "+238"
+    ],
+    "timezones": [
+      "GMT-1"
+    ]
+  },
+  {
+    "name": "Cambodia",
+    "isoA2": "KH",
+    "isoA3": "KHM",
+    "isoNumber": 116,
+    "tld": ".kh",
+    "emoji": "🇰🇭",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/kh.svg",
+    "dialCodes": [
+      "+855"
+    ],
+    "timezones": [
+      "GMT+7"
+    ]
+  },
+  {
+    "name": "Cameroon",
+    "isoA2": "CM",
+    "isoA3": "CMR",
+    "isoNumber": 120,
+    "tld": ".cm",
+    "emoji": "🇨🇲",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/cm.svg",
+    "dialCodes": [
+      "+237"
+    ],
+    "timezones": [
+      "GMT+1"
+    ]
+  },
+  {
+    "name": "Canada",
+    "isoA2": "CA",
+    "isoA3": "CAN",
+    "isoNumber": 124,
+    "tld": ".ca",
+    "emoji": "🇨🇦",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/ca.svg",
+    "dialCodes": [
+      "+1"
+    ],
+    "timezones": [
+      "GMT-3:30",
+      "GMT-4",
+      "GMT-5",
+      "GMT-6",
+      "GMT-7",
+      "GMT-8"
+    ]
+  },
+  {
+    "name": "Cayman Islands",
+    "isoA2": "KY",
+    "isoA3": "CYM",
+    "isoNumber": 136,
+    "tld": ".ky",
+    "emoji": "🇰🇾",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/ky.svg",
+    "dialCodes": [
+      "+1345"
+    ],
+    "timezones": [
+      "GMT-5"
+    ]
+  },
+  {
+    "name": "Central African Republic",
+    "isoA2": "CF",
+    "isoA3": "CAF",
+    "isoNumber": 140,
+    "tld": ".cf",
+    "emoji": "🇨🇫",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/cf.svg",
+    "dialCodes": [
+      "+236"
+    ],
+    "timezones": [
+      "GMT+1"
+    ]
+  },
+  {
+    "name": "Chad",
+    "isoA2": "TD",
+    "isoA3": "TCD",
+    "isoNumber": 148,
+    "tld": ".td",
+    "emoji": "🇹🇩",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/td.svg",
+    "dialCodes": [
+      "+235"
+    ],
+    "timezones": [
+      "GMT+1"
+    ]
+  },
+  {
+    "name": "Chile",
+    "isoA2": "CL",
+    "isoA3": "CHL",
+    "isoNumber": 152,
+    "tld": ".cl",
+    "emoji": "🇨🇱",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/cl.svg",
+    "dialCodes": [
+      "+56"
+    ],
+    "timezones": [
+      "GMT-3",
+      "GMT-4",
+      "GMT-6"
+    ]
+  },
+  {
+    "name": "China",
+    "isoA2": "CN",
+    "isoA3": "CHN",
+    "isoNumber": 156,
+    "tld": ".cn",
+    "emoji": "🇨🇳",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/cn.svg",
+    "dialCodes": [
+      "+86"
+    ],
+    "timezones": [
+      "GMT+6",
+      "GMT+8"
+    ]
+  },
+  {
+    "name": "Christmas Island",
+    "isoA2": "CX",
+    "isoA3": "CXR",
+    "isoNumber": 162,
+    "tld": ".cx",
+    "emoji": "🇨🇽",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/cx.svg",
+    "dialCodes": [
+      "+61"
+    ],
+    "timezones": [
+      "GMT+7"
+    ]
+  },
+  {
+    "name": "Cocos (Keeling) Islands",
+    "isoA2": "CC",
+    "isoA3": "CCK",
+    "isoNumber": 166,
+    "tld": ".cc",
+    "emoji": "🇨🇨",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/cc.svg",
+    "dialCodes": [
+      "+61"
+    ],
+    "timezones": [
+      "GMT+6:30"
+    ]
+  },
+  {
+    "name": "Colombia",
+    "isoA2": "CO",
+    "isoA3": "COL",
+    "isoNumber": 170,
+    "tld": ".co",
+    "emoji": "🇨🇴",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/co.svg",
+    "dialCodes": [
+      "+57"
+    ],
+    "timezones": [
+      "GMT-5"
+    ]
+  },
+  {
+    "name": "Comoros",
+    "isoA2": "KM",
+    "isoA3": "COM",
+    "isoNumber": 174,
+    "tld": ".km",
+    "emoji": "🇰🇲",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/km.svg",
+    "dialCodes": [
+      "+269"
+    ],
+    "timezones": [
+      "GMT+3"
+    ]
+  },
+  {
+    "name": "Congo",
+    "isoA2": "CG",
+    "isoA3": "COG",
+    "isoNumber": 178,
+    "tld": ".cg",
+    "emoji": "🇨🇬",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/cg.svg",
+    "dialCodes": [
+      "+242"
+    ],
+    "timezones": [
+      "GMT+1"
+    ]
+  },
+  {
+    "name": "Congo, Democratic Republic of the",
+    "isoA2": "CD",
+    "isoA3": "COD",
+    "isoNumber": 180,
+    "tld": ".cd",
+    "emoji": "🇨🇩",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/cd.svg",
+    "dialCodes": [
+      "+243"
+    ],
+    "timezones": [
+      "GMT+1",
+      "GMT+2"
+    ]
+  },
+  {
+    "name": "Cook Islands",
+    "isoA2": "CK",
+    "isoA3": "COK",
+    "isoNumber": 184,
+    "tld": ".ck",
+    "emoji": "🇨🇰",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/ck.svg",
+    "dialCodes": [
+      "+682"
+    ],
+    "timezones": [
+      "GMT-10"
+    ]
+  },
+  {
+    "name": "Costa Rica",
+    "isoA2": "CR",
+    "isoA3": "CRI",
+    "isoNumber": 188,
+    "tld": ".cr",
+    "emoji": "🇨🇷",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/cr.svg",
+    "dialCodes": [
+      "+506"
+    ],
+    "timezones": [
+      "GMT-6"
+    ]
+  },
+  {
+    "name": "Côte d'Ivoire",
+    "isoA2": "CI",
+    "isoA3": "CIV",
+    "isoNumber": 384,
+    "tld": ".ci",
+    "emoji": "🇨🇮",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/ci.svg",
+    "dialCodes": [
+      "+225"
+    ],
+    "timezones": [
+      "GMT+0"
+    ]
+  },
+  {
+    "name": "Croatia",
+    "isoA2": "HR",
+    "isoA3": "HRV",
+    "isoNumber": 191,
+    "tld": ".hr",
+    "emoji": "🇭🇷",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/hr.svg",
+    "dialCodes": [
+      "+385"
+    ],
+    "timezones": [
+      "GMT+1"
+    ]
+  },
+  {
+    "name": "Cuba",
+    "isoA2": "CU",
+    "isoA3": "CUB",
+    "isoNumber": 192,
+    "tld": ".cu",
+    "emoji": "🇨🇺",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/cu.svg",
+    "dialCodes": [
+      "+53"
+    ],
+    "timezones": [
+      "GMT-5"
+    ]
+  },
+  {
+    "name": "Curaçao",
+    "isoA2": "CW",
+    "isoA3": "CUW",
+    "isoNumber": 531,
+    "tld": ".cw",
+    "emoji": "🇨🇼",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/cw.svg",
+    "dialCodes": [
+      "+599"
+    ],
+    "timezones": [
+      "GMT-4"
+    ]
+  },
+  {
+    "name": "Cyprus",
+    "isoA2": "CY",
+    "isoA3": "CYP",
+    "isoNumber": 196,
+    "tld": ".cy",
+    "emoji": "🇨🇾",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/cy.svg",
+    "dialCodes": [
+      "+357"
+    ],
+    "timezones": [
+      "GMT+2"
+    ]
+  },
+  {
+    "name": "Czechia",
+    "isoA2": "CZ",
+    "isoA3": "CZE",
+    "isoNumber": 203,
+    "tld": ".cz",
+    "emoji": "🇨🇿",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/cz.svg",
+    "dialCodes": [
+      "+420"
+    ],
+    "timezones": [
+      "GMT+1"
+    ]
+  },
+  {
+    "name": "Denmark",
+    "isoA2": "DK",
+    "isoA3": "DNK",
+    "isoNumber": 208,
+    "tld": ".dk",
+    "emoji": "🇩🇰",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/dk.svg",
+    "dialCodes": [
+      "+45"
+    ],
+    "timezones": [
+      "GMT+1"
+    ]
+  },
+  {
+    "name": "Djibouti",
+    "isoA2": "DJ",
+    "isoA3": "DJI",
+    "isoNumber": 262,
+    "tld": ".dj",
+    "emoji": "🇩🇯",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/dj.svg",
+    "dialCodes": [
+      "+253"
+    ],
+    "timezones": [
+      "GMT+3"
+    ]
+  },
+  {
+    "name": "Dominica",
+    "isoA2": "DM",
+    "isoA3": "DMA",
+    "isoNumber": 212,
+    "tld": ".dm",
+    "emoji": "🇩🇲",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/dm.svg",
+    "dialCodes": [
+      "+1767"
+    ],
+    "timezones": [
+      "GMT-4"
+    ]
+  },
+  {
+    "name": "Dominican Republic",
+    "isoA2": "DO",
+    "isoA3": "DOM",
+    "isoNumber": 214,
+    "tld": ".do",
+    "emoji": "🇩🇴",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/do.svg",
+    "dialCodes": [
+      "+1 809",
+      "+1 829",
+      "+1 849"
+    ],
+    "timezones": [
+      "GMT-4"
+    ]
+  },
+  {
+    "name": "Ecuador",
+    "isoA2": "EC",
+    "isoA3": "ECU",
+    "isoNumber": 218,
+    "tld": ".ec",
+    "emoji": "🇪🇨",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/ec.svg",
+    "dialCodes": [
+      "+593"
+    ],
+    "timezones": [
+      "GMT-5",
+      "GMT-6"
+    ]
+  },
+  {
+    "name": "Egypt",
+    "isoA2": "EG",
+    "isoA3": "EGY",
+    "isoNumber": 818,
+    "tld": ".eg",
+    "emoji": "🇪🇬",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/eg.svg",
+    "dialCodes": [
+      "+20"
+    ],
+    "timezones": [
+      "GMT+2"
+    ]
+  },
+  {
+    "name": "El Salvador",
+    "isoA2": "SV",
+    "isoA3": "SLV",
+    "isoNumber": 222,
+    "tld": ".sv",
+    "emoji": "🇸🇻",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/sv.svg",
+    "dialCodes": [
+      "+503"
+    ],
+    "timezones": [
+      "GMT-6"
+    ]
+  },
+  {
+    "name": "Equatorial Guinea",
+    "isoA2": "GQ",
+    "isoA3": "GNQ",
+    "isoNumber": 226,
+    "tld": ".gq",
+    "emoji": "🇬🇶",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/gq.svg",
+    "dialCodes": [
+      "+240"
+    ],
+    "timezones": [
+      "GMT+1"
+    ]
+  },
+  {
+    "name": "Eritrea",
+    "isoA2": "ER",
+    "isoA3": "ERI",
+    "isoNumber": 232,
+    "tld": ".er",
+    "emoji": "🇪🇷",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/er.svg",
+    "dialCodes": [
+      "+291"
+    ],
+    "timezones": [
+      "GMT+3"
+    ]
+  },
+  {
+    "name": "Estonia",
+    "isoA2": "EE",
+    "isoA3": "EST",
+    "isoNumber": 233,
+    "tld": ".ee",
+    "emoji": "🇪🇪",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/ee.svg",
+    "dialCodes": [
+      "+372"
+    ],
+    "timezones": [
+      "GMT+2"
+    ]
+  },
+  {
+    "name": "Eswatini",
+    "isoA2": "SZ",
+    "isoA3": "SWZ",
+    "isoNumber": 748,
+    "tld": ".sz",
+    "emoji": "🇸🇿",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/sz.svg",
+    "dialCodes": [
+      "+268"
+    ],
+    "timezones": [
+      "GMT+2"
+    ]
+  },
+  {
+    "name": "Ethiopia",
+    "isoA2": "ET",
+    "isoA3": "ETH",
+    "isoNumber": 231,
+    "tld": ".et",
+    "emoji": "🇪🇹",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/et.svg",
+    "dialCodes": [
+      "+251"
+    ],
+    "timezones": [
+      "GMT+3"
+    ]
+  },
+  {
+    "name": "Falkland Islands (Malvinas)",
+    "isoA2": "FK",
+    "isoA3": "FLK",
+    "isoNumber": 238,
+    "tld": ".fk",
+    "emoji": "🇫🇰",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/fk.svg",
+    "dialCodes": [
+      "+500"
+    ],
+    "timezones": [
+      "GMT-3"
+    ]
+  },
+  {
+    "name": "Faroe Islands",
+    "isoA2": "FO",
+    "isoA3": "FRO",
+    "isoNumber": 234,
+    "tld": ".fo",
+    "emoji": "🇫🇴",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/fo.svg",
+    "dialCodes": [
+      "+298"
+    ],
+    "timezones": [
+      "GMT+0"
+    ]
+  },
+  {
+    "name": "Fiji",
+    "isoA2": "FJ",
+    "isoA3": "FJI",
+    "isoNumber": 242,
+    "tld": ".fj",
+    "emoji": "🇫🇯",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/fj.svg",
+    "dialCodes": [
+      "+679"
+    ],
+    "timezones": [
+      "GMT+12"
+    ]
+  },
+  {
+    "name": "Finland",
+    "isoA2": "FI",
+    "isoA3": "FIN",
+    "isoNumber": 246,
+    "tld": ".fi",
+    "emoji": "🇫🇮",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/fi.svg",
+    "dialCodes": [
+      "+358"
+    ],
+    "timezones": [
+      "GMT+2"
+    ]
+  },
+  {
+    "name": "France",
+    "isoA2": "FR",
+    "isoA3": "FRA",
+    "isoNumber": 250,
+    "tld": ".fr",
+    "emoji": "🇫🇷",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/fr.svg",
+    "dialCodes": [
+      "+33"
+    ],
+    "timezones": [
+      "GMT+1"
+    ]
+  },
+  {
+    "name": "French Guiana",
+    "isoA2": "GF",
+    "isoA3": "GUF",
+    "isoNumber": 254,
+    "tld": ".gf",
+    "emoji": "🇬🇫",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/gf.svg",
+    "dialCodes": [
+      "+594"
+    ],
+    "timezones": [
+      "GMT-3"
+    ]
+  },
+  {
+    "name": "French Polynesia",
+    "isoA2": "PF",
+    "isoA3": "PYF",
+    "isoNumber": 258,
+    "tld": ".pf",
+    "emoji": "🇵🇫",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/pf.svg",
+    "dialCodes": [
+      "+689"
+    ],
+    "timezones": [
+      "GMT-10",
+      "GMT-9",
+      "GMT-9:30"
+    ]
+  },
+  {
+    "name": "French Southern Territories",
+    "isoA2": "TF",
+    "isoA3": "ATF",
+    "isoNumber": 260,
+    "tld": ".tf",
+    "emoji": "🇹🇫",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/tf.svg",
+    "dialCodes": [
+      "+262"
+    ],
+    "timezones": [
+      "GMT+4",
+      "GMT+5"
+    ]
+  },
+  {
+    "name": "Gabon",
+    "isoA2": "GA",
+    "isoA3": "GAB",
+    "isoNumber": 266,
+    "tld": ".ga",
+    "emoji": "🇬🇦",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/ga.svg",
+    "dialCodes": [
+      "+241"
+    ],
+    "timezones": [
+      "GMT+1"
+    ]
+  },
+  {
+    "name": "Gambia",
+    "isoA2": "GM",
+    "isoA3": "GMB",
+    "isoNumber": 270,
+    "tld": ".gm",
+    "emoji": "🇬🇲",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/gm.svg",
+    "dialCodes": [
+      "+220"
+    ],
+    "timezones": [
+      "GMT+0"
+    ]
+  },
+  {
+    "name": "Georgia",
+    "isoA2": "GE",
+    "isoA3": "GEO",
+    "isoNumber": 268,
+    "tld": ".ge",
+    "emoji": "🇬🇪",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/ge.svg",
+    "dialCodes": [
+      "+995"
+    ],
+    "timezones": [
+      "GMT+4"
+    ]
+  },
+  {
+    "name": "Germany",
+    "isoA2": "DE",
+    "isoA3": "DEU",
+    "isoNumber": 276,
+    "tld": ".de",
+    "emoji": "🇩🇪",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/de.svg",
+    "dialCodes": [
+      "+49"
+    ],
+    "timezones": [
+      "GMT+1"
+    ]
+  },
+  {
+    "name": "Ghana",
+    "isoA2": "GH",
+    "isoA3": "GHA",
+    "isoNumber": 288,
+    "tld": ".gh",
+    "emoji": "🇬🇭",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/gh.svg",
+    "dialCodes": [
+      "+233"
+    ],
+    "timezones": [
+      "GMT+0"
+    ]
+  },
+  {
+    "name": "Gibraltar",
+    "isoA2": "GI",
+    "isoA3": "GIB",
+    "isoNumber": 292,
+    "tld": ".gi",
+    "emoji": "🇬🇮",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/gi.svg",
+    "dialCodes": [
+      "+350"
+    ],
+    "timezones": [
+      "GMT+1"
+    ]
+  },
+  {
+    "name": "Greece",
+    "isoA2": "GR",
+    "isoA3": "GRC",
+    "isoNumber": 300,
+    "tld": ".gr",
+    "emoji": "🇬🇷",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/gr.svg",
+    "dialCodes": [
+      "+30"
+    ],
+    "timezones": [
+      "GMT+2"
+    ]
+  },
+  {
+    "name": "Greenland",
+    "isoA2": "GL",
+    "isoA3": "GRL",
+    "isoNumber": 304,
+    "tld": ".gl",
+    "emoji": "🇬🇱",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/gl.svg",
+    "dialCodes": [
+      "+299"
+    ],
+    "timezones": [
+      "GMT+0",
+      "GMT-2",
+      "GMT-4"
+    ]
+  },
+  {
+    "name": "Grenada",
+    "isoA2": "GD",
+    "isoA3": "GRD",
+    "isoNumber": 308,
+    "tld": ".gd",
+    "emoji": "🇬🇩",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/gd.svg",
+    "dialCodes": [
+      "+1473"
+    ],
+    "timezones": [
+      "GMT-4"
+    ]
+  },
+  {
+    "name": "Guadeloupe",
+    "isoA2": "GP",
+    "isoA3": "GLP",
+    "isoNumber": 312,
+    "tld": ".gp",
+    "emoji": "🇬🇵",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/gp.svg",
+    "dialCodes": [
+      "+590"
+    ],
+    "timezones": [
+      "GMT-4"
+    ]
+  },
+  {
+    "name": "Guam",
+    "isoA2": "GU",
+    "isoA3": "GUM",
+    "isoNumber": 316,
+    "tld": ".gu",
+    "emoji": "🇬🇺",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/gu.svg",
+    "dialCodes": [
+      "+1671"
+    ],
+    "timezones": [
+      "GMT+10"
+    ]
+  },
+  {
+    "name": "Guatemala",
+    "isoA2": "GT",
+    "isoA3": "GTM",
+    "isoNumber": 320,
+    "tld": ".gt",
+    "emoji": "🇬🇹",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/gt.svg",
+    "dialCodes": [
+      "+502"
+    ],
+    "timezones": [
+      "GMT-6"
+    ]
+  },
+  {
+    "name": "Guernsey",
+    "isoA2": "GG",
+    "isoA3": "GGY",
+    "isoNumber": 831,
+    "tld": ".gg",
+    "emoji": "🇬🇬",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/gg.svg",
+    "dialCodes": [
+      "+44"
+    ],
+    "timezones": [
+      "GMT+0"
+    ]
+  },
+  {
+    "name": "Guinea",
+    "isoA2": "GN",
+    "isoA3": "GIN",
+    "isoNumber": 324,
+    "tld": ".gn",
+    "emoji": "🇬🇳",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/gn.svg",
+    "dialCodes": [
+      "+224"
+    ],
+    "timezones": [
+      "GMT+0"
+    ]
+  },
+  {
+    "name": "Guinea-Bissau",
+    "isoA2": "GW",
+    "isoA3": "GNB",
+    "isoNumber": 624,
+    "tld": ".gw",
+    "emoji": "🇬🇼",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/gw.svg",
+    "dialCodes": [
+      "+245"
+    ],
+    "timezones": [
+      "GMT+0"
+    ]
+  },
+  {
+    "name": "Guyana",
+    "isoA2": "GY",
+    "isoA3": "GUY",
+    "isoNumber": 328,
+    "tld": ".gy",
+    "emoji": "🇬🇾",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/gy.svg",
+    "dialCodes": [
+      "+592"
+    ],
+    "timezones": [
+      "GMT-4"
+    ]
+  },
+  {
+    "name": "Haiti",
+    "isoA2": "HT",
+    "isoA3": "HTI",
+    "isoNumber": 332,
+    "tld": ".ht",
+    "emoji": "🇭🇹",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/ht.svg",
+    "dialCodes": [
+      "+509"
+    ],
+    "timezones": [
+      "GMT-5"
+    ]
+  },
+  {
+    "name": "Heard Island and McDonald Islands",
+    "isoA2": "HM",
+    "isoA3": "HMD",
+    "isoNumber": 334,
+    "tld": ".hm",
+    "emoji": "🇭🇲",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/hm.svg",
+    "dialCodes": [],
+    "timezones": []
+  },
+  {
+    "name": "Holy See",
+    "isoA2": "VA",
+    "isoA3": "VAT",
+    "isoNumber": 336,
+    "tld": ".va",
+    "emoji": "🇻🇦",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/va.svg",
+    "dialCodes": [
+      "+379"
+    ],
+    "timezones": [
+      "GMT+1"
+    ]
+  },
+  {
+    "name": "Honduras",
+    "isoA2": "HN",
+    "isoA3": "HND",
+    "isoNumber": 340,
+    "tld": ".hn",
+    "emoji": "🇭🇳",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/hn.svg",
+    "dialCodes": [
+      "+504"
+    ],
+    "timezones": [
+      "GMT-6"
+    ]
+  },
+  {
+    "name": "Hong Kong",
+    "isoA2": "HK",
+    "isoA3": "HKG",
+    "isoNumber": 344,
+    "tld": ".hk",
+    "emoji": "🇭🇰",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/hk.svg",
+    "dialCodes": [
+      "+852"
+    ],
+    "timezones": [
+      "GMT+8"
+    ]
+  },
+  {
+    "name": "Hungary",
+    "isoA2": "HU",
+    "isoA3": "HUN",
+    "isoNumber": 348,
+    "tld": ".hu",
+    "emoji": "🇭🇺",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/hu.svg",
+    "dialCodes": [
+      "+36"
+    ],
+    "timezones": [
+      "GMT+1"
+    ]
+  },
+  {
+    "name": "Iceland",
+    "isoA2": "IS",
+    "isoA3": "ISL",
+    "isoNumber": 352,
+    "tld": ".is",
+    "emoji": "🇮🇸",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/is.svg",
+    "dialCodes": [
+      "+354"
+    ],
+    "timezones": [
+      "GMT+0"
+    ]
+  },
+  {
+    "name": "India",
+    "isoA2": "IN",
+    "isoA3": "IND",
+    "isoNumber": 356,
+    "tld": ".in",
+    "emoji": "🇮🇳",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/in.svg",
+    "dialCodes": [
+      "+91"
+    ],
+    "timezones": [
+      "GMT+5:30"
+    ]
+  },
+  {
+    "name": "Indonesia",
+    "isoA2": "ID",
+    "isoA3": "IDN",
+    "isoNumber": 360,
+    "tld": ".id",
+    "emoji": "🇮🇩",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/id.svg",
+    "dialCodes": [
+      "+62"
+    ],
+    "timezones": [
+      "GMT+7",
+      "GMT+8",
+      "GMT+9"
+    ]
+  },
+  {
+    "name": "Iran, Islamic Republic of",
+    "isoA2": "IR",
+    "isoA3": "IRN",
+    "isoNumber": 364,
+    "tld": ".ir",
+    "emoji": "🇮🇷",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/ir.svg",
+    "dialCodes": [
+      "+98"
+    ],
+    "timezones": [
+      "GMT+3:30"
+    ]
+  },
+  {
+    "name": "Iraq",
+    "isoA2": "IQ",
+    "isoA3": "IRQ",
+    "isoNumber": 368,
+    "tld": ".iq",
+    "emoji": "🇮🇶",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/iq.svg",
+    "dialCodes": [
+      "+964"
+    ],
+    "timezones": [
+      "GMT+3"
+    ]
+  },
+  {
+    "name": "Ireland",
+    "isoA2": "IE",
+    "isoA3": "IRL",
+    "isoNumber": 372,
+    "tld": ".ie",
+    "emoji": "🇮🇪",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/ie.svg",
+    "dialCodes": [
+      "+353"
+    ],
+    "timezones": [
+      "GMT+0"
+    ]
+  },
+  {
+    "name": "Isle of Man",
+    "isoA2": "IM",
+    "isoA3": "IMN",
+    "isoNumber": 833,
+    "tld": ".im",
+    "emoji": "🇮🇲",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/im.svg",
+    "dialCodes": [
+      "+44"
+    ],
+    "timezones": [
+      "GMT+0"
+    ]
+  },
+  {
+    "name": "Israel",
+    "isoA2": "IL",
+    "isoA3": "ISR",
+    "isoNumber": 376,
+    "tld": ".il",
+    "emoji": "🇮🇱",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/il.svg",
+    "dialCodes": [
+      "+972"
+    ],
+    "timezones": [
+      "GMT+2"
+    ]
+  },
+  {
+    "name": "Italy",
+    "isoA2": "IT",
+    "isoA3": "ITA",
+    "isoNumber": 380,
+    "tld": ".it",
+    "emoji": "🇮🇹",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/it.svg",
+    "dialCodes": [
+      "+39"
+    ],
+    "timezones": [
+      "GMT+1"
+    ]
+  },
+  {
+    "name": "Jamaica",
+    "isoA2": "JM",
+    "isoA3": "JAM",
+    "isoNumber": 388,
+    "tld": ".jm",
+    "emoji": "🇯🇲",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/jm.svg",
+    "dialCodes": [
+      "+1 876"
+    ],
+    "timezones": [
+      "GMT-5"
+    ]
+  },
+  {
+    "name": "Japan",
+    "isoA2": "JP",
+    "isoA3": "JPN",
+    "isoNumber": 392,
+    "tld": ".jp",
+    "emoji": "🇯🇵",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/jp.svg",
+    "dialCodes": [
+      "+81"
+    ],
+    "timezones": [
+      "GMT+9"
+    ]
+  },
+  {
+    "name": "Jersey",
+    "isoA2": "JE",
+    "isoA3": "JEY",
+    "isoNumber": 832,
+    "tld": ".je",
+    "emoji": "🇯🇪",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/je.svg",
+    "dialCodes": [
+      "+44"
+    ],
+    "timezones": [
+      "GMT+0"
+    ]
+  },
+  {
+    "name": "Jordan",
+    "isoA2": "JO",
+    "isoA3": "JOR",
+    "isoNumber": 400,
+    "tld": ".jo",
+    "emoji": "🇯🇴",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/jo.svg",
+    "dialCodes": [
+      "+962"
+    ],
+    "timezones": [
+      "GMT+3"
+    ]
+  },
+  {
+    "name": "Kazakhstan",
+    "isoA2": "KZ",
+    "isoA3": "KAZ",
+    "isoNumber": 398,
+    "tld": ".kz",
+    "emoji": "🇰🇿",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/kz.svg",
+    "dialCodes": [
+      "+7"
+    ],
+    "timezones": [
+      "GMT+5"
+    ]
+  },
+  {
+    "name": "Kenya",
+    "isoA2": "KE",
+    "isoA3": "KEN",
+    "isoNumber": 404,
+    "tld": ".ke",
+    "emoji": "🇰🇪",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/ke.svg",
+    "dialCodes": [
+      "+254"
+    ],
+    "timezones": [
+      "GMT+3"
+    ]
+  },
+  {
+    "name": "Kiribati",
+    "isoA2": "KI",
+    "isoA3": "KIR",
+    "isoNumber": 296,
+    "tld": ".ki",
+    "emoji": "🇰🇮",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/ki.svg",
+    "dialCodes": [
+      "+686"
+    ],
+    "timezones": [
+      "GMT+12",
+      "GMT+13",
+      "GMT+14"
+    ]
+  },
+  {
+    "name": "Korea, Democratic People's Republic of",
+    "isoA2": "KP",
+    "isoA3": "PRK",
+    "isoNumber": 408,
+    "tld": ".kp",
+    "emoji": "🇰🇵",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/kp.svg",
+    "dialCodes": [
+      "+850"
+    ],
+    "timezones": [
+      "GMT+9"
+    ]
+  },
+  {
+    "name": "Korea, Republic of",
+    "isoA2": "KR",
+    "isoA3": "KOR",
+    "isoNumber": 410,
+    "tld": ".kr",
+    "emoji": "🇰🇷",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/kr.svg",
+    "dialCodes": [
+      "+82"
+    ],
+    "timezones": [
+      "GMT+9"
+    ]
+  },
+  {
+    "name": "Kuwait",
+    "isoA2": "KW",
+    "isoA3": "KWT",
+    "isoNumber": 414,
+    "tld": ".kw",
+    "emoji": "🇰🇼",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/kw.svg",
+    "dialCodes": [
+      "+965"
+    ],
+    "timezones": [
+      "GMT+3"
+    ]
+  },
+  {
+    "name": "Kyrgyzstan",
+    "isoA2": "KG",
+    "isoA3": "KGZ",
+    "isoNumber": 417,
+    "tld": ".kg",
+    "emoji": "🇰🇬",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/kg.svg",
+    "dialCodes": [
+      "+996"
+    ],
+    "timezones": [
+      "GMT+6"
+    ]
+  },
+  {
+    "name": "Lao People's Democratic Republic",
+    "isoA2": "LA",
+    "isoA3": "LAO",
+    "isoNumber": 418,
+    "tld": ".la",
+    "emoji": "🇱🇦",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/la.svg",
+    "dialCodes": [
+      "+856"
+    ],
+    "timezones": [
+      "GMT+7"
+    ]
+  },
+  {
+    "name": "Latvia",
+    "isoA2": "LV",
+    "isoA3": "LVA",
+    "isoNumber": 428,
+    "tld": ".lv",
+    "emoji": "🇱🇻",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/lv.svg",
+    "dialCodes": [
+      "+371"
+    ],
+    "timezones": [
+      "GMT+2"
+    ]
+  },
+  {
+    "name": "Lebanon",
+    "isoA2": "LB",
+    "isoA3": "LBN",
+    "isoNumber": 422,
+    "tld": ".lb",
+    "emoji": "🇱🇧",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/lb.svg",
+    "dialCodes": [
+      "+961"
+    ],
+    "timezones": [
+      "GMT+2"
+    ]
+  },
+  {
+    "name": "Lesotho",
+    "isoA2": "LS",
+    "isoA3": "LSO",
+    "isoNumber": 426,
+    "tld": ".ls",
+    "emoji": "🇱🇸",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/ls.svg",
+    "dialCodes": [
+      "+266"
+    ],
+    "timezones": [
+      "GMT+2"
+    ]
+  },
+  {
+    "name": "Liberia",
+    "isoA2": "LR",
+    "isoA3": "LBR",
+    "isoNumber": 430,
+    "tld": ".lr",
+    "emoji": "🇱🇷",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/lr.svg",
+    "dialCodes": [
+      "+231"
+    ],
+    "timezones": [
+      "GMT+0"
+    ]
+  },
+  {
+    "name": "Libya",
+    "isoA2": "LY",
+    "isoA3": "LBY",
+    "isoNumber": 434,
+    "tld": ".ly",
+    "emoji": "🇱🇾",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/ly.svg",
+    "dialCodes": [
+      "+218"
+    ],
+    "timezones": [
+      "GMT+2"
+    ]
+  },
+  {
+    "name": "Liechtenstein",
+    "isoA2": "LI",
+    "isoA3": "LIE",
+    "isoNumber": 438,
+    "tld": ".li",
+    "emoji": "🇱🇮",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/li.svg",
+    "dialCodes": [
+      "+423"
+    ],
+    "timezones": [
+      "GMT+1"
+    ]
+  },
+  {
+    "name": "Lithuania",
+    "isoA2": "LT",
+    "isoA3": "LTU",
+    "isoNumber": 440,
+    "tld": ".lt",
+    "emoji": "🇱🇹",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/lt.svg",
+    "dialCodes": [
+      "+370"
+    ],
+    "timezones": [
+      "GMT+2"
+    ]
+  },
+  {
+    "name": "Luxembourg",
+    "isoA2": "LU",
+    "isoA3": "LUX",
+    "isoNumber": 442,
+    "tld": ".lu",
+    "emoji": "🇱🇺",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/lu.svg",
+    "dialCodes": [
+      "+352"
+    ],
+    "timezones": [
+      "GMT+1"
+    ]
+  },
+  {
+    "name": "Macao",
+    "isoA2": "MO",
+    "isoA3": "MAC",
+    "isoNumber": 446,
+    "tld": ".mo",
+    "emoji": "🇲🇴",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/mo.svg",
+    "dialCodes": [
+      "+853"
+    ],
+    "timezones": [
+      "GMT+8"
+    ]
+  },
+  {
+    "name": "Madagascar",
+    "isoA2": "MG",
+    "isoA3": "MDG",
+    "isoNumber": 450,
+    "tld": ".mg",
+    "emoji": "🇲🇬",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/mg.svg",
+    "dialCodes": [
+      "+261"
+    ],
+    "timezones": [
+      "GMT+3"
+    ]
+  },
+  {
+    "name": "Malawi",
+    "isoA2": "MW",
+    "isoA3": "MWI",
+    "isoNumber": 454,
+    "tld": ".mw",
+    "emoji": "🇲🇼",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/mw.svg",
+    "dialCodes": [
+      "+265"
+    ],
+    "timezones": [
+      "GMT+2"
+    ]
+  },
+  {
+    "name": "Malaysia",
+    "isoA2": "MY",
+    "isoA3": "MYS",
+    "isoNumber": 458,
+    "tld": ".my",
+    "emoji": "🇲🇾",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/my.svg",
+    "dialCodes": [
+      "+60"
+    ],
+    "timezones": [
+      "GMT+8"
+    ]
+  },
+  {
+    "name": "Maldives",
+    "isoA2": "MV",
+    "isoA3": "MDV",
+    "isoNumber": 462,
+    "tld": ".mv",
+    "emoji": "🇲🇻",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/mv.svg",
+    "dialCodes": [
+      "+960"
+    ],
+    "timezones": [
+      "GMT+5"
+    ]
+  },
+  {
+    "name": "Mali",
+    "isoA2": "ML",
+    "isoA3": "MLI",
+    "isoNumber": 466,
+    "tld": ".ml",
+    "emoji": "🇲🇱",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/ml.svg",
+    "dialCodes": [
+      "+223"
+    ],
+    "timezones": [
+      "GMT+0"
+    ]
+  },
+  {
+    "name": "Malta",
+    "isoA2": "MT",
+    "isoA3": "MLT",
+    "isoNumber": 470,
+    "tld": ".mt",
+    "emoji": "🇲🇹",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/mt.svg",
+    "dialCodes": [
+      "+356"
+    ],
+    "timezones": [
+      "GMT+1"
+    ]
+  },
+  {
+    "name": "Marshall Islands",
+    "isoA2": "MH",
+    "isoA3": "MHL",
+    "isoNumber": 584,
+    "tld": ".mh",
+    "emoji": "🇲🇭",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/mh.svg",
+    "dialCodes": [
+      "+692"
+    ],
+    "timezones": [
+      "GMT+12"
+    ]
+  },
+  {
+    "name": "Martinique",
+    "isoA2": "MQ",
+    "isoA3": "MTQ",
+    "isoNumber": 474,
+    "tld": ".mq",
+    "emoji": "🇲🇶",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/mq.svg",
+    "dialCodes": [
+      "+596"
+    ],
+    "timezones": [
+      "GMT-4"
+    ]
+  },
+  {
+    "name": "Mauritania",
+    "isoA2": "MR",
+    "isoA3": "MRT",
+    "isoNumber": 478,
+    "tld": ".mr",
+    "emoji": "🇲🇷",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/mr.svg",
+    "dialCodes": [
+      "+222"
+    ],
+    "timezones": [
+      "GMT+0"
+    ]
+  },
+  {
+    "name": "Mauritius",
+    "isoA2": "MU",
+    "isoA3": "MUS",
+    "isoNumber": 480,
+    "tld": ".mu",
+    "emoji": "🇲🇺",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/mu.svg",
+    "dialCodes": [
+      "+230"
+    ],
+    "timezones": [
+      "GMT+4"
+    ]
+  },
+  {
+    "name": "Mayotte",
+    "isoA2": "YT",
+    "isoA3": "MYT",
+    "isoNumber": 175,
+    "tld": ".yt",
+    "emoji": "🇾🇹",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/yt.svg",
+    "dialCodes": [
+      "+262"
+    ],
+    "timezones": [
+      "GMT+3"
+    ]
+  },
+  {
+    "name": "Mexico",
+    "isoA2": "MX",
+    "isoA3": "MEX",
+    "isoNumber": 484,
+    "tld": ".mx",
+    "emoji": "🇲🇽",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/mx.svg",
+    "dialCodes": [
+      "+52"
+    ],
+    "timezones": [
+      "GMT-5",
+      "GMT-6",
+      "GMT-7",
+      "GMT-8"
+    ]
+  },
+  {
+    "name": "Micronesia, Federated States of",
+    "isoA2": "FM",
+    "isoA3": "FSM",
+    "isoNumber": 583,
+    "tld": ".fm",
+    "emoji": "🇫🇲",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/fm.svg",
+    "dialCodes": [
+      "+691"
+    ],
+    "timezones": [
+      "GMT+10",
+      "GMT+11"
+    ]
+  },
+  {
+    "name": "Moldova, Republic of",
+    "isoA2": "MD",
+    "isoA3": "MDA",
+    "isoNumber": 498,
+    "tld": ".md",
+    "emoji": "🇲🇩",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/md.svg",
+    "dialCodes": [
+      "+373"
+    ],
+    "timezones": [
+      "GMT+2"
+    ]
+  },
+  {
+    "name": "Monaco",
+    "isoA2": "MC",
+    "isoA3": "MCO",
+    "isoNumber": 492,
+    "tld": ".mc",
+    "emoji": "🇲🇨",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/mc.svg",
+    "dialCodes": [
+      "+377"
+    ],
+    "timezones": [
+      "GMT+1"
+    ]
+  },
+  {
+    "name": "Mongolia",
+    "isoA2": "MN",
+    "isoA3": "MNG",
+    "isoNumber": 496,
+    "tld": ".mn",
+    "emoji": "🇲🇳",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/mn.svg",
+    "dialCodes": [
+      "+976"
+    ],
+    "timezones": [
+      "GMT+7",
+      "GMT+8"
+    ]
+  },
+  {
+    "name": "Montenegro",
+    "isoA2": "ME",
+    "isoA3": "MNE",
+    "isoNumber": 499,
+    "tld": ".me",
+    "emoji": "🇲🇪",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/me.svg",
+    "dialCodes": [
+      "+382"
+    ],
+    "timezones": [
+      "GMT+1"
+    ]
+  },
+  {
+    "name": "Montserrat",
+    "isoA2": "MS",
+    "isoA3": "MSR",
+    "isoNumber": 500,
+    "tld": ".ms",
+    "emoji": "🇲🇸",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/ms.svg",
+    "dialCodes": [
+      "+1 664"
+    ],
+    "timezones": [
+      "GMT-4"
+    ]
+  },
+  {
+    "name": "Morocco",
+    "isoA2": "MA",
+    "isoA3": "MAR",
+    "isoNumber": 504,
+    "tld": ".ma",
+    "emoji": "🇲🇦",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/ma.svg",
+    "dialCodes": [
+      "+212"
+    ],
+    "timezones": [
+      "GMT+1"
+    ]
+  },
+  {
+    "name": "Mozambique",
+    "isoA2": "MZ",
+    "isoA3": "MOZ",
+    "isoNumber": 508,
+    "tld": ".mz",
+    "emoji": "🇲🇿",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/mz.svg",
+    "dialCodes": [
+      "+258"
+    ],
+    "timezones": [
+      "GMT+2"
+    ]
+  },
+  {
+    "name": "Myanmar",
+    "isoA2": "MM",
+    "isoA3": "MMR",
+    "isoNumber": 104,
+    "tld": ".mm",
+    "emoji": "🇲🇲",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/mm.svg",
+    "dialCodes": [
+      "+95"
+    ],
+    "timezones": [
+      "GMT+6:30"
+    ]
+  },
+  {
+    "name": "Namibia",
+    "isoA2": "NA",
+    "isoA3": "NAM",
+    "isoNumber": 516,
+    "tld": ".na",
+    "emoji": "🇳🇦",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/na.svg",
+    "dialCodes": [
+      "+264"
+    ],
+    "timezones": [
+      "GMT+2"
+    ]
+  },
+  {
+    "name": "Nauru",
+    "isoA2": "NR",
+    "isoA3": "NRU",
+    "isoNumber": 520,
+    "tld": ".nr",
+    "emoji": "🇳🇷",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/nr.svg",
+    "dialCodes": [
+      "+674"
+    ],
+    "timezones": [
+      "GMT+12"
+    ]
+  },
+  {
+    "name": "Nepal",
+    "isoA2": "NP",
+    "isoA3": "NPL",
+    "isoNumber": 524,
+    "tld": ".np",
+    "emoji": "🇳🇵",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/np.svg",
+    "dialCodes": [
+      "+977"
+    ],
+    "timezones": [
+      "GMT+5:45"
+    ]
+  },
+  {
+    "name": "Netherlands, Kingdom of the",
+    "isoA2": "NL",
+    "isoA3": "NLD",
+    "isoNumber": 528,
+    "tld": ".nl",
+    "emoji": "🇳🇱",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/nl.svg",
+    "dialCodes": [
+      "+31"
+    ],
+    "timezones": [
+      "GMT+1"
+    ]
+  },
+  {
+    "name": "New Caledonia",
+    "isoA2": "NC",
+    "isoA3": "NCL",
+    "isoNumber": 540,
+    "tld": ".nc",
+    "emoji": "🇳🇨",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/nc.svg",
+    "dialCodes": [
+      "+687"
+    ],
+    "timezones": [
+      "GMT+11"
+    ]
+  },
+  {
+    "name": "New Zealand",
+    "isoA2": "NZ",
+    "isoA3": "NZL",
+    "isoNumber": 554,
+    "tld": ".nz",
+    "emoji": "🇳🇿",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/nz.svg",
+    "dialCodes": [
+      "+64"
+    ],
+    "timezones": [
+      "GMT+12",
+      "GMT+12:45"
+    ]
+  },
+  {
+    "name": "Nicaragua",
+    "isoA2": "NI",
+    "isoA3": "NIC",
+    "isoNumber": 558,
+    "tld": ".ni",
+    "emoji": "🇳🇮",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/ni.svg",
+    "dialCodes": [
+      "+505"
+    ],
+    "timezones": [
+      "GMT-6"
+    ]
+  },
+  {
+    "name": "Niger",
+    "isoA2": "NE",
+    "isoA3": "NER",
+    "isoNumber": 562,
+    "tld": ".ne",
+    "emoji": "🇳🇪",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/ne.svg",
+    "dialCodes": [
+      "+227"
+    ],
+    "timezones": [
+      "GMT+1"
+    ]
+  },
+  {
+    "name": "Nigeria",
+    "isoA2": "NG",
+    "isoA3": "NGA",
+    "isoNumber": 566,
+    "tld": ".ng",
+    "emoji": "🇳🇬",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/ng.svg",
+    "dialCodes": [
+      "+234"
+    ],
+    "timezones": [
+      "GMT+1"
+    ]
+  },
+  {
+    "name": "Niue",
+    "isoA2": "NU",
+    "isoA3": "NIU",
+    "isoNumber": 570,
+    "tld": ".nu",
+    "emoji": "🇳🇺",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/nu.svg",
+    "dialCodes": [
+      "+683"
+    ],
+    "timezones": [
+      "GMT-11"
+    ]
+  },
+  {
+    "name": "Norfolk Island",
+    "isoA2": "NF",
+    "isoA3": "NFK",
+    "isoNumber": 574,
+    "tld": ".nf",
+    "emoji": "🇳🇫",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/nf.svg",
+    "dialCodes": [
+      "+672"
+    ],
+    "timezones": [
+      "GMT+11"
+    ]
+  },
+  {
+    "name": "North Macedonia",
+    "isoA2": "MK",
+    "isoA3": "MKD",
+    "isoNumber": 807,
+    "tld": ".mk",
+    "emoji": "🇲🇰",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/mk.svg",
+    "dialCodes": [
+      "+389"
+    ],
+    "timezones": [
+      "GMT+1"
+    ]
+  },
+  {
+    "name": "Northern Mariana Islands",
+    "isoA2": "MP",
+    "isoA3": "MNP",
+    "isoNumber": 580,
+    "tld": ".mp",
+    "emoji": "🇲🇵",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/mp.svg",
+    "dialCodes": [
+      "+1 670"
+    ],
+    "timezones": [
+      "GMT+10"
+    ]
+  },
+  {
+    "name": "Norway",
+    "isoA2": "NO",
+    "isoA3": "NOR",
+    "isoNumber": 578,
+    "tld": ".no",
+    "emoji": "🇳🇴",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/no.svg",
+    "dialCodes": [
+      "+47"
+    ],
+    "timezones": [
+      "GMT+1"
+    ]
+  },
+  {
+    "name": "Oman",
+    "isoA2": "OM",
+    "isoA3": "OMN",
+    "isoNumber": 512,
+    "tld": ".om",
+    "emoji": "🇴🇲",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/om.svg",
+    "dialCodes": [
+      "+968"
+    ],
+    "timezones": [
+      "GMT+4"
+    ]
+  },
+  {
+    "name": "Pakistan",
+    "isoA2": "PK",
+    "isoA3": "PAK",
+    "isoNumber": 586,
+    "tld": ".pk",
+    "emoji": "🇵🇰",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/pk.svg",
+    "dialCodes": [
+      "+92"
+    ],
+    "timezones": [
+      "GMT+5"
+    ]
+  },
+  {
+    "name": "Palau",
+    "isoA2": "PW",
+    "isoA3": "PLW",
+    "isoNumber": 585,
+    "tld": ".pw",
+    "emoji": "🇵🇼",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/pw.svg",
+    "dialCodes": [
+      "+680"
+    ],
+    "timezones": [
+      "GMT+9"
+    ]
+  },
+  {
+    "name": "Palestine, State of",
+    "isoA2": "PS",
+    "isoA3": "PSE",
+    "isoNumber": 275,
+    "tld": ".ps",
+    "emoji": "🇵🇸",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/ps.svg",
+    "dialCodes": [
+      "+970"
+    ],
+    "timezones": [
+      "GMT+2"
+    ]
+  },
+  {
+    "name": "Panama",
+    "isoA2": "PA",
+    "isoA3": "PAN",
+    "isoNumber": 591,
+    "tld": ".pa",
+    "emoji": "🇵🇦",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/pa.svg",
+    "dialCodes": [
+      "+507"
+    ],
+    "timezones": [
+      "GMT-5"
+    ]
+  },
+  {
+    "name": "Papua New Guinea",
+    "isoA2": "PG",
+    "isoA3": "PNG",
+    "isoNumber": 598,
+    "tld": ".pg",
+    "emoji": "🇵🇬",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/pg.svg",
+    "dialCodes": [
+      "+675"
+    ],
+    "timezones": [
+      "GMT+10",
+      "GMT+11"
+    ]
+  },
+  {
+    "name": "Paraguay",
+    "isoA2": "PY",
+    "isoA3": "PRY",
+    "isoNumber": 600,
+    "tld": ".py",
+    "emoji": "🇵🇾",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/py.svg",
+    "dialCodes": [
+      "+595"
+    ],
+    "timezones": [
+      "GMT-3"
+    ]
+  },
+  {
+    "name": "Peru",
+    "isoA2": "PE",
+    "isoA3": "PER",
+    "isoNumber": 604,
+    "tld": ".pe",
+    "emoji": "🇵🇪",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/pe.svg",
+    "dialCodes": [
+      "+51"
+    ],
+    "timezones": [
+      "GMT-5"
+    ]
+  },
+  {
+    "name": "Philippines",
+    "isoA2": "PH",
+    "isoA3": "PHL",
+    "isoNumber": 608,
+    "tld": ".ph",
+    "emoji": "🇵🇭",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/ph.svg",
+    "dialCodes": [
+      "+63"
+    ],
+    "timezones": [
+      "GMT+8"
+    ]
+  },
+  {
+    "name": "Pitcairn",
+    "isoA2": "PN",
+    "isoA3": "PCN",
+    "isoNumber": 612,
+    "tld": ".pn",
+    "emoji": "🇵🇳",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/pn.svg",
+    "dialCodes": [
+      "+64"
+    ],
+    "timezones": [
+      "GMT-8"
+    ]
+  },
+  {
+    "name": "Poland",
+    "isoA2": "PL",
+    "isoA3": "POL",
+    "isoNumber": 616,
+    "tld": ".pl",
+    "emoji": "🇵🇱",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/pl.svg",
+    "dialCodes": [
+      "+48"
+    ],
+    "timezones": [
+      "GMT+1"
+    ]
+  },
+  {
+    "name": "Portugal",
+    "isoA2": "PT",
+    "isoA3": "PRT",
+    "isoNumber": 620,
+    "tld": ".pt",
+    "emoji": "🇵🇹",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/pt.svg",
+    "dialCodes": [
+      "+351"
+    ],
+    "timezones": [
+      "GMT+0",
+      "GMT-1"
+    ]
+  },
+  {
+    "name": "Puerto Rico",
+    "isoA2": "PR",
+    "isoA3": "PRI",
+    "isoNumber": 630,
+    "tld": ".pr",
+    "emoji": "🇵🇷",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/pr.svg",
+    "dialCodes": [
+      "+1 787"
+    ],
+    "timezones": [
+      "GMT-4"
+    ]
+  },
+  {
+    "name": "Qatar",
+    "isoA2": "QA",
+    "isoA3": "QAT",
+    "isoNumber": 634,
+    "tld": ".qa",
+    "emoji": "🇶🇦",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/qa.svg",
+    "dialCodes": [
+      "+974"
+    ],
+    "timezones": [
+      "GMT+3"
+    ]
+  },
+  {
+    "name": "Réunion",
+    "isoA2": "RE",
+    "isoA3": "REU",
+    "isoNumber": 638,
+    "tld": ".re",
+    "emoji": "🇷🇪",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/re.svg",
+    "dialCodes": [
+      "+262"
+    ],
+    "timezones": [
+      "GMT+4"
+    ]
+  },
+  {
+    "name": "Romania",
+    "isoA2": "RO",
+    "isoA3": "ROU",
+    "isoNumber": 642,
+    "tld": ".ro",
+    "emoji": "🇷🇴",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/ro.svg",
+    "dialCodes": [
+      "+40"
+    ],
+    "timezones": [
+      "GMT+2"
+    ]
+  },
+  {
+    "name": "Russian Federation",
+    "isoA2": "RU",
+    "isoA3": "RUS",
+    "isoNumber": 643,
+    "tld": ".ru",
+    "emoji": "🇷🇺",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/ru.svg",
+    "dialCodes": [
+      "+7"
+    ],
+    "timezones": [
+      "GMT+10",
+      "GMT+11",
+      "GMT+12",
+      "GMT+2",
+      "GMT+3",
+      "GMT+4",
+      "GMT+5",
+      "GMT+6",
+      "GMT+7",
+      "GMT+8",
+      "GMT+9"
+    ]
+  },
+  {
+    "name": "Rwanda",
+    "isoA2": "RW",
+    "isoA3": "RWA",
+    "isoNumber": 646,
+    "tld": ".rw",
+    "emoji": "🇷🇼",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/rw.svg",
+    "dialCodes": [
+      "+250"
+    ],
+    "timezones": [
+      "GMT+2"
+    ]
+  },
+  {
+    "name": "Saint Barthélemy",
+    "isoA2": "BL",
+    "isoA3": "BLM",
+    "isoNumber": 652,
+    "tld": ".bl",
+    "emoji": "🇧🇱",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/bl.svg",
+    "dialCodes": [
+      "+590"
+    ],
+    "timezones": [
+      "GMT-4"
+    ]
+  },
+  {
+    "name": "Saint Helena, Ascension and Tristan da Cunha",
+    "isoA2": "SH",
+    "isoA3": "SHN",
+    "isoNumber": 654,
+    "tld": ".sh",
+    "emoji": "🇸🇭",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/sh.svg",
+    "dialCodes": [
+      "+290"
+    ],
+    "timezones": [
+      "GMT+0"
+    ]
+  },
+  {
+    "name": "Saint Kitts and Nevis",
+    "isoA2": "KN",
+    "isoA3": "KNA",
+    "isoNumber": 659,
+    "tld": ".kn",
+    "emoji": "🇰🇳",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/kn.svg",
+    "dialCodes": [
+      "+1 869"
+    ],
+    "timezones": [
+      "GMT-4"
+    ]
+  },
+  {
+    "name": "Saint Lucia",
+    "isoA2": "LC",
+    "isoA3": "LCA",
+    "isoNumber": 662,
+    "tld": ".lc",
+    "emoji": "🇱🇨",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/lc.svg",
+    "dialCodes": [
+      "+1 758"
+    ],
+    "timezones": [
+      "GMT-4"
+    ]
+  },
+  {
+    "name": "Saint Martin (French part)",
+    "isoA2": "MF",
+    "isoA3": "MAF",
+    "isoNumber": 663,
+    "tld": ".mf",
+    "emoji": "🇲🇫",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/mf.svg",
+    "dialCodes": [
+      "+590"
+    ],
+    "timezones": [
+      "GMT-4"
+    ]
+  },
+  {
+    "name": "Saint Pierre and Miquelon",
+    "isoA2": "PM",
+    "isoA3": "SPM",
+    "isoNumber": 666,
+    "tld": ".pm",
+    "emoji": "🇵🇲",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/pm.svg",
+    "dialCodes": [
+      "+508"
+    ],
+    "timezones": [
+      "GMT-3"
+    ]
+  },
+  {
+    "name": "Saint Vincent and the Grenadines",
+    "isoA2": "VC",
+    "isoA3": "VCT",
+    "isoNumber": 670,
+    "tld": ".vc",
+    "emoji": "🇻🇨",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/vc.svg",
+    "dialCodes": [
+      "+1 784"
+    ],
+    "timezones": [
+      "GMT-4"
+    ]
+  },
+  {
+    "name": "Samoa",
+    "isoA2": "WS",
+    "isoA3": "WSM",
+    "isoNumber": 882,
+    "tld": ".ws",
+    "emoji": "🇼🇸",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/ws.svg",
+    "dialCodes": [
+      "+685"
+    ],
+    "timezones": [
+      "GMT+13"
+    ]
+  },
+  {
+    "name": "San Marino",
+    "isoA2": "SM",
+    "isoA3": "SMR",
+    "isoNumber": 674,
+    "tld": ".sm",
+    "emoji": "🇸🇲",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/sm.svg",
+    "dialCodes": [
+      "+378"
+    ],
+    "timezones": [
+      "GMT+1"
+    ]
+  },
+  {
+    "name": "Sao Tome and Principe",
+    "isoA2": "ST",
+    "isoA3": "STP",
+    "isoNumber": 678,
+    "tld": ".st",
+    "emoji": "🇸🇹",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/st.svg",
+    "dialCodes": [
+      "+239"
+    ],
+    "timezones": [
+      "GMT+0"
+    ]
+  },
+  {
+    "name": "Saudi Arabia",
+    "isoA2": "SA",
+    "isoA3": "SAU",
+    "isoNumber": 682,
+    "tld": ".sa",
+    "emoji": "🇸🇦",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/sa.svg",
+    "dialCodes": [
+      "+966"
+    ],
+    "timezones": [
+      "GMT+3"
+    ]
+  },
+  {
+    "name": "Senegal",
+    "isoA2": "SN",
+    "isoA3": "SEN",
+    "isoNumber": 686,
+    "tld": ".sn",
+    "emoji": "🇸🇳",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/sn.svg",
+    "dialCodes": [
+      "+221"
+    ],
+    "timezones": [
+      "GMT+0"
+    ]
+  },
+  {
+    "name": "Serbia",
+    "isoA2": "RS",
+    "isoA3": "SRB",
+    "isoNumber": 688,
+    "tld": ".rs",
+    "emoji": "🇷🇸",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/rs.svg",
+    "dialCodes": [
+      "+381"
+    ],
+    "timezones": [
+      "GMT+1"
+    ]
+  },
+  {
+    "name": "Seychelles",
+    "isoA2": "SC",
+    "isoA3": "SYC",
+    "isoNumber": 690,
+    "tld": ".sc",
+    "emoji": "🇸🇨",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/sc.svg",
+    "dialCodes": [
+      "+248"
+    ],
+    "timezones": [
+      "GMT+4"
+    ]
+  },
+  {
+    "name": "Sierra Leone",
+    "isoA2": "SL",
+    "isoA3": "SLE",
+    "isoNumber": 694,
+    "tld": ".sl",
+    "emoji": "🇸🇱",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/sl.svg",
+    "dialCodes": [
+      "+232"
+    ],
+    "timezones": [
+      "GMT+0"
+    ]
+  },
+  {
+    "name": "Singapore",
+    "isoA2": "SG",
+    "isoA3": "SGP",
+    "isoNumber": 702,
+    "tld": ".sg",
+    "emoji": "🇸🇬",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/sg.svg",
+    "dialCodes": [
+      "+65"
+    ],
+    "timezones": [
+      "GMT+8"
+    ]
+  },
+  {
+    "name": "Sint Maarten (Dutch part)",
+    "isoA2": "SX",
+    "isoA3": "SXM",
+    "isoNumber": 534,
+    "tld": ".sx",
+    "emoji": "🇸🇽",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/sx.svg",
+    "dialCodes": [
+      "+1 721"
+    ],
+    "timezones": [
+      "GMT-4"
+    ]
+  },
+  {
+    "name": "Slovakia",
+    "isoA2": "SK",
+    "isoA3": "SVK",
+    "isoNumber": 703,
+    "tld": ".sk",
+    "emoji": "🇸🇰",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/sk.svg",
+    "dialCodes": [
+      "+421"
+    ],
+    "timezones": [
+      "GMT+1"
+    ]
+  },
+  {
+    "name": "Slovenia",
+    "isoA2": "SI",
+    "isoA3": "SVN",
+    "isoNumber": 705,
+    "tld": ".si",
+    "emoji": "🇸🇮",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/si.svg",
+    "dialCodes": [
+      "+386"
+    ],
+    "timezones": [
+      "GMT+1"
+    ]
+  },
+  {
+    "name": "Solomon Islands",
+    "isoA2": "SB",
+    "isoA3": "SLB",
+    "isoNumber": 90,
+    "tld": ".sb",
+    "emoji": "🇸🇧",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/sb.svg",
+    "dialCodes": [
+      "+677"
+    ],
+    "timezones": [
+      "GMT+11"
+    ]
+  },
+  {
+    "name": "Somalia",
+    "isoA2": "SO",
+    "isoA3": "SOM",
+    "isoNumber": 706,
+    "tld": ".so",
+    "emoji": "🇸🇴",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/so.svg",
+    "dialCodes": [
+      "+252"
+    ],
+    "timezones": [
+      "GMT+3"
+    ]
+  },
+  {
+    "name": "South Africa",
+    "isoA2": "ZA",
+    "isoA3": "ZAF",
+    "isoNumber": 710,
+    "tld": ".za",
+    "emoji": "🇿🇦",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/za.svg",
+    "dialCodes": [
+      "+27"
+    ],
+    "timezones": [
+      "GMT+2"
+    ]
+  },
+  {
+    "name": "South Georgia and the South Sandwich Islands",
+    "isoA2": "GS",
+    "isoA3": "SGS",
+    "isoNumber": 239,
+    "tld": ".gs",
+    "emoji": "🇬🇸",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/gs.svg",
+    "dialCodes": [
+      "+500"
+    ],
+    "timezones": [
+      "GMT-2"
+    ]
+  },
+  {
+    "name": "South Sudan",
+    "isoA2": "SS",
+    "isoA3": "SSD",
+    "isoNumber": 728,
+    "tld": ".ss",
+    "emoji": "🇸🇸",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/ss.svg",
+    "dialCodes": [
+      "+211"
+    ],
+    "timezones": [
+      "GMT+2"
+    ]
+  },
+  {
+    "name": "Spain",
+    "isoA2": "ES",
+    "isoA3": "ESP",
+    "isoNumber": 724,
+    "tld": ".es",
+    "emoji": "🇪🇸",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/es.svg",
+    "dialCodes": [
+      "+34"
+    ],
+    "timezones": [
+      "GMT+0",
+      "GMT+1"
+    ]
+  },
+  {
+    "name": "Sri Lanka",
+    "isoA2": "LK",
+    "isoA3": "LKA",
+    "isoNumber": 144,
+    "tld": ".lk",
+    "emoji": "🇱🇰",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/lk.svg",
+    "dialCodes": [
+      "+94"
+    ],
+    "timezones": [
+      "GMT+5:30"
+    ]
+  },
+  {
+    "name": "Sudan",
+    "isoA2": "SD",
+    "isoA3": "SDN",
+    "isoNumber": 729,
+    "tld": ".sd",
+    "emoji": "🇸🇩",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/sd.svg",
+    "dialCodes": [
+      "+249"
+    ],
+    "timezones": [
+      "GMT+2"
+    ]
+  },
+  {
+    "name": "Suriname",
+    "isoA2": "SR",
+    "isoA3": "SUR",
+    "isoNumber": 740,
+    "tld": ".sr",
+    "emoji": "🇸🇷",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/sr.svg",
+    "dialCodes": [
+      "+597"
+    ],
+    "timezones": [
+      "GMT-3"
+    ]
+  },
+  {
+    "name": "Svalbard and Jan Mayen",
+    "isoA2": "SJ",
+    "isoA3": "SJM",
+    "isoNumber": 744,
+    "tld": ".sj",
+    "emoji": "🇸🇯",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/sj.svg",
+    "dialCodes": [
+      "+47"
+    ],
+    "timezones": [
+      "GMT+1"
+    ]
+  },
+  {
+    "name": "Sweden",
+    "isoA2": "SE",
+    "isoA3": "SWE",
+    "isoNumber": 752,
+    "tld": ".se",
+    "emoji": "🇸🇪",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/se.svg",
+    "dialCodes": [
+      "+46"
+    ],
+    "timezones": [
+      "GMT+1"
+    ]
+  },
+  {
+    "name": "Switzerland",
+    "isoA2": "CH",
+    "isoA3": "CHE",
+    "isoNumber": 756,
+    "tld": ".ch",
+    "emoji": "🇨🇭",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/ch.svg",
+    "dialCodes": [
+      "+41"
+    ],
+    "timezones": [
+      "GMT+1"
+    ]
+  },
+  {
+    "name": "Syrian Arab Republic",
+    "isoA2": "SY",
+    "isoA3": "SYR",
+    "isoNumber": 760,
+    "tld": ".sy",
+    "emoji": "🇸🇾",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/sy.svg",
+    "dialCodes": [
+      "+963"
+    ],
+    "timezones": [
+      "GMT+3"
+    ]
+  },
+  {
+    "name": "Taiwan, Province of China",
+    "isoA2": "TW",
+    "isoA3": "TWN",
+    "isoNumber": 158,
+    "tld": ".tw",
+    "emoji": "🇹🇼",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/tw.svg",
+    "dialCodes": [
+      "+886"
+    ],
+    "timezones": [
+      "GMT+8"
+    ]
+  },
+  {
+    "name": "Tajikistan",
+    "isoA2": "TJ",
+    "isoA3": "TJK",
+    "isoNumber": 762,
+    "tld": ".tj",
+    "emoji": "🇹🇯",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/tj.svg",
+    "dialCodes": [
+      "+992"
+    ],
+    "timezones": [
+      "GMT+5"
+    ]
+  },
+  {
+    "name": "Tanzania, United Republic of",
+    "isoA2": "TZ",
+    "isoA3": "TZA",
+    "isoNumber": 834,
+    "tld": ".tz",
+    "emoji": "🇹🇿",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/tz.svg",
+    "dialCodes": [
+      "+255"
+    ],
+    "timezones": [
+      "GMT+3"
+    ]
+  },
+  {
+    "name": "Thailand",
+    "isoA2": "TH",
+    "isoA3": "THA",
+    "isoNumber": 764,
+    "tld": ".th",
+    "emoji": "🇹🇭",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/th.svg",
+    "dialCodes": [
+      "+66"
+    ],
+    "timezones": [
+      "GMT+7"
+    ]
+  },
+  {
+    "name": "Timor-Leste",
+    "isoA2": "TL",
+    "isoA3": "TLS",
+    "isoNumber": 626,
+    "tld": ".tl",
+    "emoji": "🇹🇱",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/tl.svg",
+    "dialCodes": [
+      "+670"
+    ],
+    "timezones": [
+      "GMT+9"
+    ]
+  },
+  {
+    "name": "Togo",
+    "isoA2": "TG",
+    "isoA3": "TGO",
+    "isoNumber": 768,
+    "tld": ".tg",
+    "emoji": "🇹🇬",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/tg.svg",
+    "dialCodes": [
+      "+228"
+    ],
+    "timezones": [
+      "GMT+0"
+    ]
+  },
+  {
+    "name": "Tokelau",
+    "isoA2": "TK",
+    "isoA3": "TKL",
+    "isoNumber": 772,
+    "tld": ".tk",
+    "emoji": "🇹🇰",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/tk.svg",
+    "dialCodes": [
+      "+690"
+    ],
+    "timezones": [
+      "GMT+13"
+    ]
+  },
+  {
+    "name": "Tonga",
+    "isoA2": "TO",
+    "isoA3": "TON",
+    "isoNumber": 776,
+    "tld": ".to",
+    "emoji": "🇹🇴",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/to.svg",
+    "dialCodes": [
+      "+676"
+    ],
+    "timezones": [
+      "GMT+13"
+    ]
+  },
+  {
+    "name": "Trinidad and Tobago",
+    "isoA2": "TT",
+    "isoA3": "TTO",
+    "isoNumber": 780,
+    "tld": ".tt",
+    "emoji": "🇹🇹",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/tt.svg",
+    "dialCodes": [
+      "+1 868"
+    ],
+    "timezones": [
+      "GMT-4"
+    ]
+  },
+  {
+    "name": "Tunisia",
+    "isoA2": "TN",
+    "isoA3": "TUN",
+    "isoNumber": 788,
+    "tld": ".tn",
+    "emoji": "🇹🇳",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/tn.svg",
+    "dialCodes": [
+      "+216"
+    ],
+    "timezones": [
+      "GMT+1"
+    ]
+  },
+  {
+    "name": "Türkiye",
+    "isoA2": "TR",
+    "isoA3": "TUR",
+    "isoNumber": 792,
+    "tld": ".tr",
+    "emoji": "🇹🇷",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/tr.svg",
+    "dialCodes": [
+      "+90"
+    ],
+    "timezones": [
+      "GMT+3"
+    ]
+  },
+  {
+    "name": "Turkmenistan",
+    "isoA2": "TM",
+    "isoA3": "TKM",
+    "isoNumber": 795,
+    "tld": ".tm",
+    "emoji": "🇹🇲",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/tm.svg",
+    "dialCodes": [
+      "+993"
+    ],
+    "timezones": [
+      "GMT+5"
+    ]
+  },
+  {
+    "name": "Turks and Caicos Islands",
+    "isoA2": "TC",
+    "isoA3": "TCA",
+    "isoNumber": 796,
+    "tld": ".tc",
+    "emoji": "🇹🇨",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/tc.svg",
+    "dialCodes": [
+      "+1 649"
+    ],
+    "timezones": [
+      "GMT-5"
+    ]
+  },
+  {
+    "name": "Tuvalu",
+    "isoA2": "TV",
+    "isoA3": "TUV",
+    "isoNumber": 798,
+    "tld": ".tv",
+    "emoji": "🇹🇻",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/tv.svg",
+    "dialCodes": [
+      "+688"
+    ],
+    "timezones": [
+      "GMT+12"
+    ]
+  },
+  {
+    "name": "Uganda",
+    "isoA2": "UG",
+    "isoA3": "UGA",
+    "isoNumber": 800,
+    "tld": ".ug",
+    "emoji": "🇺🇬",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/ug.svg",
+    "dialCodes": [
+      "+256"
+    ],
+    "timezones": [
+      "GMT+3"
+    ]
+  },
+  {
+    "name": "Ukraine",
+    "isoA2": "UA",
+    "isoA3": "UKR",
+    "isoNumber": 804,
+    "tld": ".ua",
+    "emoji": "🇺🇦",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/ua.svg",
+    "dialCodes": [
+      "+380"
+    ],
+    "timezones": [
+      "GMT+2",
+      "GMT+3"
+    ]
+  },
+  {
+    "name": "United Arab Emirates",
+    "isoA2": "AE",
+    "isoA3": "ARE",
+    "isoNumber": 784,
+    "tld": ".ae",
+    "emoji": "🇦🇪",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/ae.svg",
+    "dialCodes": [
+      "+971"
+    ],
+    "timezones": [
+      "GMT+4"
+    ]
+  },
+  {
+    "name": "United Kingdom of Great Britain and Northern Ireland",
+    "isoA2": "GB",
+    "isoA3": "GBR",
+    "isoNumber": 826,
+    "tld": ".uk",
+    "emoji": "🇬🇧",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/gb.svg",
+    "dialCodes": [
+      "+44"
+    ],
+    "timezones": [
+      "GMT+0"
+    ]
+  },
+  {
+    "name": "United States of America",
+    "isoA2": "US",
+    "isoA3": "USA",
+    "isoNumber": 840,
+    "tld": ".us",
+    "emoji": "🇺🇸",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/us.svg",
+    "dialCodes": [
+      "+1"
+    ],
+    "timezones": [
+      "GMT-10",
+      "GMT-5",
+      "GMT-6",
+      "GMT-7",
+      "GMT-8",
+      "GMT-9"
+    ]
+  },
+  {
+    "name": "United States Minor Outlying Islands",
+    "isoA2": "UM",
+    "isoA3": "UMI",
+    "isoNumber": 581,
+    "tld": ".um",
+    "emoji": "🇺🇲",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/um.svg",
+    "dialCodes": [
+      "+1"
+    ],
+    "timezones": [
+      "GMT-11",
+      "GMT-10",
+      "GMT+12"
+    ]
+  },
+  {
+    "name": "Uruguay",
+    "isoA2": "UY",
+    "isoA3": "URY",
+    "isoNumber": 858,
+    "tld": ".uy",
+    "emoji": "🇺🇾",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/uy.svg",
+    "dialCodes": [
+      "+598"
+    ],
+    "timezones": [
+      "GMT-3"
+    ]
+  },
+  {
+    "name": "Uzbekistan",
+    "isoA2": "UZ",
+    "isoA3": "UZB",
+    "isoNumber": 860,
+    "tld": ".uz",
+    "emoji": "🇺🇿",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/uz.svg",
+    "dialCodes": [
+      "+998"
+    ],
+    "timezones": [
+      "GMT+5"
+    ]
+  },
+  {
+    "name": "Vanuatu",
+    "isoA2": "VU",
+    "isoA3": "VUT",
+    "isoNumber": 548,
+    "tld": ".vu",
+    "emoji": "🇻🇺",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/vu.svg",
+    "dialCodes": [
+      "+678"
+    ],
+    "timezones": [
+      "GMT+11"
+    ]
+  },
+  {
+    "name": "Venezuela, Bolivarian Republic of",
+    "isoA2": "VE",
+    "isoA3": "VEN",
+    "isoNumber": 862,
+    "tld": ".ve",
+    "emoji": "🇻🇪",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/ve.svg",
+    "dialCodes": [
+      "+58"
+    ],
+    "timezones": [
+      "GMT-4"
+    ]
+  },
+  {
+    "name": "Viet Nam",
+    "isoA2": "VN",
+    "isoA3": "VNM",
+    "isoNumber": 704,
+    "tld": ".vn",
+    "emoji": "🇻🇳",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/vn.svg",
+    "dialCodes": [
+      "+84"
+    ],
+    "timezones": [
+      "GMT+7"
+    ]
+  },
+  {
+    "name": "Virgin Islands (British)",
+    "isoA2": "VG",
+    "isoA3": "VGB",
+    "isoNumber": 92,
+    "tld": ".vg",
+    "emoji": "🇻🇬",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/vg.svg",
+    "dialCodes": [
+      "+1 284"
+    ],
+    "timezones": [
+      "GMT-4"
+    ]
+  },
+  {
+    "name": "Virgin Islands (U.S.)",
+    "isoA2": "VI",
+    "isoA3": "VIR",
+    "isoNumber": 850,
+    "tld": ".vi",
+    "emoji": "🇻🇮",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/vi.svg",
+    "dialCodes": [
+      "+1 340"
+    ],
+    "timezones": [
+      "GMT-4"
+    ]
+  },
+  {
+    "name": "Wallis and Futuna",
+    "isoA2": "WF",
+    "isoA3": "WLF",
+    "isoNumber": 876,
+    "tld": ".wf",
+    "emoji": "🇼🇫",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/wf.svg",
+    "dialCodes": [
+      "+681"
+    ],
+    "timezones": [
+      "GMT+12"
+    ]
+  },
+  {
+    "name": "Western Sahara",
+    "isoA2": "EH",
+    "isoA3": "ESH",
+    "isoNumber": 732,
+    "tld": ".eh",
+    "emoji": "🇪🇭",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/eh.svg",
+    "dialCodes": [
+      "+212"
+    ],
+    "timezones": [
+      "GMT+1"
+    ]
+  },
+  {
+    "name": "Yemen",
+    "isoA2": "YE",
+    "isoA3": "YEM",
+    "isoNumber": 887,
+    "tld": ".ye",
+    "emoji": "🇾🇪",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/ye.svg",
+    "dialCodes": [
+      "+967"
+    ],
+    "timezones": [
+      "GMT+3"
+    ]
+  },
+  {
+    "name": "Zambia",
+    "isoA2": "ZM",
+    "isoA3": "ZMB",
+    "isoNumber": 894,
+    "tld": ".zm",
+    "emoji": "🇿🇲",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/zm.svg",
+    "dialCodes": [
+      "+260"
+    ],
+    "timezones": [
+      "GMT+2"
+    ]
+  },
+  {
+    "name": "Zimbabwe",
+    "isoA2": "ZW",
+    "isoA3": "ZWE",
+    "isoNumber": 716,
+    "tld": ".zw",
+    "emoji": "🇿🇼",
+    "image": "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/zw.svg",
+    "dialCodes": [
+      "+263"
+    ],
+    "timezones": [
+      "GMT+2"
+    ]
+  },
+  {
+    "name": "Disputed Territory",
+    "isoA2": "XX",
+    "isoA3": "XXX",
+    "isoNumber": 900,
+    "tld": null,
+    "emoji": null,
+    "image": null,
+    "dialCodes": [],
+    "timezones": []
+  },
+  {
+    "name": "Iraq-Saudi Arabia Neutral Zone",
+    "isoA2": "XE",
+    "isoA3": "XEX",
+    "isoNumber": 901,
+    "tld": null,
+    "emoji": null,
+    "image": null,
+    "dialCodes": [],
+    "timezones": []
+  },
+  {
+    "name": "United Nations Neutral Zone",
+    "isoA2": "XD",
+    "isoA3": "XDX",
+    "isoNumber": 902,
+    "tld": null,
+    "emoji": null,
+    "image": null,
+    "dialCodes": [],
+    "timezones": []
+  },
+  {
+    "name": "Spratly Islands",
+    "isoA2": "XS",
+    "isoA3": "XSX",
+    "isoNumber": 903,
+    "tld": null,
+    "emoji": null,
+    "image": null,
+    "dialCodes": [],
+    "timezones": []
+  }
+]
