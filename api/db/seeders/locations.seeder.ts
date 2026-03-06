@@ -1,4 +1,4 @@
-import { continentsTable, countriesTable, statesTable } from "$/schema";
+import { continentsTable, countriesTable, statesTable, stateStatsTable } from "$/schema";
 import { db } from "$/db";
 import { and, eq } from "drizzle-orm";
 import countriesData from "./data/countries.json";
@@ -150,4 +150,58 @@ export const seedStates = async () => {
     }
   }
   console.log(`States seeded: ${MALAYSIA_STATES.length} (Malaysia only)`);
+};
+
+/** Default stats per state: reserves and regeneration rates. */
+const DEFAULT_STATE_STATS = {
+  waterReserve: 1000,
+  landReserve: 1000,
+  foodReserve: 1000,
+  waterRegeneration: 10,
+  foodRegeneration: 10,
+};
+
+export const seedStateStats = async () => {
+  const [malaysia] = await db
+    .select()
+    .from(countriesTable)
+    .where(eq(countriesTable.isoA2, MALAYSIA_COUNTRY_CODE))
+    .limit(1);
+
+  if (!malaysia) {
+    console.log("Malaysia not found; run seedCountries first. Skipping state_stats.");
+    return;
+  }
+
+  let created = 0;
+  for (const s of MALAYSIA_STATES) {
+    const [state] = await db
+      .select()
+      .from(statesTable)
+      .where(
+        and(
+          eq(statesTable.countryId, malaysia.id),
+          eq(statesTable.name, s.name)
+        )
+      )
+      .limit(1);
+
+    if (!state) continue;
+
+    const existing = await db
+      .select()
+      .from(stateStatsTable)
+      .where(eq(stateStatsTable.stateId, state.id))
+      .limit(1);
+
+    if (existing.length === 0) {
+      await db.insert(stateStatsTable).values({
+        stateId: state.id,
+        ...DEFAULT_STATE_STATS,
+      });
+      created++;
+      console.log(`Created state_stats for ${s.name}`);
+    }
+  }
+  console.log(`State stats seeded: ${created} created`);
 };

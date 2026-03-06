@@ -31,6 +31,19 @@ export const statesTable = pgTable("states", {
   name: text().notNull(),
 });
 
+export const stateStatsTable = pgTable("state_stats", {
+  id: bigint({ mode: "number" }).primaryKey().generatedAlwaysAsIdentity(),
+  stateId: bigint({ mode: "number" })
+    .references(() => statesTable.id, { onDelete: "cascade" })
+    .notNull()
+    .unique(),
+  waterReserve: bigint({ mode: "number" }).notNull().default(0),
+  landReserve: bigint({ mode: "number" }).notNull().default(0),
+  foodReserve: bigint({ mode: "number" }).notNull().default(0),
+  waterRegeneration: bigint({ mode: "number" }).notNull().default(0),
+  foodRegeneration: bigint({ mode: "number" }).notNull().default(0),
+});
+
 export const continentsRelations = relations(continentsTable, ({ many }) => ({
   countries: many(countriesTable),
 }));
@@ -47,5 +60,13 @@ export const statesRelations = relations(statesTable, ({ one }) => ({
   country: one(countriesTable, {
     fields: [statesTable.countryId],
     references: [countriesTable.id],
+  }),
+  stats: one(stateStatsTable),
+}));
+
+export const stateStatsRelations = relations(stateStatsTable, ({ one }) => ({
+  state: one(statesTable, {
+    fields: [stateStatsTable.stateId],
+    references: [statesTable.id],
   }),
 }));

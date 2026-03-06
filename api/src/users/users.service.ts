@@ -1,5 +1,5 @@
 import { db } from "$/db";
-import { usersTable, userRelationshipsTable, userPregnanciesTable } from "$/schema";
+import { usersTable, userRelationshipsTable, userPregnanciesTable, userStatsTable } from "$/schema";
 import { and, eq, inArray, or, sql } from "drizzle-orm";
 import type { InferInsertModel, InferSelectModel } from "drizzle-orm";
 import { CreateUserRelationshipSchema, CreateUserSchema, GetUserPregnancySchema, GetUserSchema, UpdateUserPregnancySchema, UpdateUserSchema } from "./users.schema";
@@ -30,7 +30,15 @@ export const usersService = {
         if (!Array.isArray(result) || result.length === 0) {
             throw new Error("Failed to create user");
         }
-        return result[0];
+        const newUser = result[0];
+        await db.insert(userStatsTable).values({
+            userId: newUser.id,
+            hunger: 100,
+            hydration: 100,
+            health: 100,
+            holding: 0,
+        });
+        return newUser;
     },
     updateUser: async (id: GetUserSchema["id"], user: UpdateUserSchema): Promise<User> => {
         const result = await db.update(usersTable).set(user).where(eq(usersTable.id, id)).returning();

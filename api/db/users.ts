@@ -1,5 +1,6 @@
-import { pgTable, integer, varchar, boolean, pgEnum, date } from "drizzle-orm/pg-core";
+import { pgTable, integer, bigint, smallint, varchar, boolean, pgEnum, date } from "drizzle-orm/pg-core";
 import { relations } from "drizzle-orm";
+import { statesTable } from "./locations";
 
 export const genderEnum = pgEnum("gender", ["male", "female", "non-binary"]);
 export const relationTypeEnum = pgEnum("relation_type", ["parent", "spouse", "guardian"]);
@@ -13,6 +14,9 @@ export const usersTable = pgTable("users", {
   lastName: varchar({ length: 255 }).notNull(),
   ageOverride: integer(), // optional; days to prepend to createdAt for age calculation
   gender: genderEnum("gender").notNull(), // "male", "female", "non-binary"
+  location: bigint({ mode: "number" })
+    .references(() => statesTable.id, { onDelete: "restrict" })
+    .notNull(),
   isDeceased: boolean().notNull().default(false),
   createdAt: date().notNull().default("0001-01-01"), // simulator date YYYY-MM-DD
   updatedAt: date().notNull().default("0001-01-01"), // simulator date YYYY-MM-DD
@@ -42,11 +46,31 @@ export const userRelationshipsTable = pgTable("user_relationships", {
   createdAt: date().notNull().default("0001-01-01"),
 });
 
-export const usersRelations = relations(usersTable, ({ many }) => ({
+export const userStatsTable = pgTable("user_stats", {
+  id: bigint({ mode: "number" }).primaryKey().generatedAlwaysAsIdentity(),
+  userId: integer()
+    .references(() => usersTable.id, { onDelete: "cascade" })
+    .notNull()
+    .unique(),
+  hunger: smallint().notNull().default(100), // 0-100
+  hydration: smallint().notNull().default(100), // 0-100
+  health: smallint().notNull().default(100), // 0-100
+  holding: bigint({ mode: "number" }).notNull().default(0),
+});
+
+export const usersRelations = relations(usersTable, ({ many, one }) => ({
   // People who are related TO this user (e.g., "Give me this user's parents")
   relatedTo: many(userRelationshipsTable, { relationName: "object_user" }),
   // People this user is related TO (e.g., "Give me this user's children")
   relatedAs: many(userRelationshipsTable, { relationName: "subject_user" }),
+  stats: one(userStatsTable),
+}));
+
+export const userStatsRelations = relations(userStatsTable, ({ one }) => ({
+  user: one(usersTable, {
+    fields: [userStatsTable.userId],
+    references: [usersTable.id],
+  }),
 }));
 
 export const userRelationshipsRelations = relations(userRelationshipsTable, ({ one }) => ({

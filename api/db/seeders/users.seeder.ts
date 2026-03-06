@@ -1,13 +1,22 @@
 // create a seeder for the users table, Adam and Eve
-import { usersTable, userRelationshipsTable } from "$/schema";
+import {
+    usersTable,
+    userRelationshipsTable,
+    userStatsTable,
+    statesTable,
+} from "$/schema";
 import { db } from "$/db";
 import { eq, and } from "drizzle-orm";
 import type { CreateUserSchema } from "@/users/users.schema";
 import type { RelationshipSeedSchema } from "./schemas";
 
 const SIMULATOR_START = "0001-01-01";
+const DEFAULT_LOCATION_STATE = "Selangor";
 
-const users: (CreateUserSchema & { createdAt?: string; updatedAt?: string })[] = [
+const users: (CreateUserSchema & {
+    createdAt?: string;
+    updatedAt?: string;
+})[] = [
     {
         firstName: "Adam",
         lastName: "Adam",
@@ -23,7 +32,7 @@ const users: (CreateUserSchema & { createdAt?: string; updatedAt?: string })[] =
         gender: "female",
         createdAt: SIMULATOR_START,
         updatedAt: SIMULATOR_START,
-    }
+    },
 ];
 
 const relationships: RelationshipSeedSchema[] = [
@@ -48,22 +57,75 @@ const relationships: RelationshipSeedSchema[] = [
 ];
 
 export const seedUsers = async () => {
-    // Check if users already exist to avoid duplicates
+    // Get Selangor state id (locations must be seeded first)
+    const [selangor] = await db
+        .select()
+        .from(statesTable)
+        .where(eq(statesTable.name, DEFAULT_LOCATION_STATE))
+        .limit(1);
+
+    if (!selangor) {
+        console.log(
+            `${DEFAULT_LOCATION_STATE} not found; run seedContinents, seedCountries, seedStates first. Skipping users.`
+        );
+        return;
+    }
+
+    const locationId = Number(selangor.id);
+
     for (const user of users) {
-        const existing = await db.select()
+        const existing = await db
+            .select()
             .from(usersTable)
             .where(eq(usersTable.firstName, user.firstName))
             .limit(1);
-        
+
         if (existing.length === 0) {
             await db.insert(usersTable).values({
-                ...user,
+                firstName: user.firstName,
+                lastName: user.lastName,
+                ageOverride: user.ageOverride,
+                gender: user.gender,
+                location: locationId,
                 createdAt: SIMULATOR_START,
                 updatedAt: SIMULATOR_START,
             }).returning();
-            console.log(`Created user: ${user.firstName} ${user.lastName}`);
+            console.log(`Created user: ${user.firstName} ${user.lastName} (location: ${DEFAULT_LOCATION_STATE})`);
         } else {
             console.log(`User already exists: ${user.firstName} ${user.lastName}`);
+        }
+    }
+};
+
+export const seedUserStats = async () => {
+    const [adam] = await db
+        .select()
+        .from(usersTable)
+        .where(and(eq(usersTable.firstName, "Adam"), eq(usersTable.lastName, "Adam")))
+        .limit(1);
+    const [eve] = await db
+        .select()
+        .from(usersTable)
+        .where(and(eq(usersTable.firstName, "Eve"), eq(usersTable.lastName, "Eve")))
+        .limit(1);
+    const adamAndEve = [adam, eve].filter(Boolean);
+
+    for (const user of adamAndEve) {
+        const existing = await db
+            .select()
+            .from(userStatsTable)
+            .where(eq(userStatsTable.userId, user.id))
+            .limit(1);
+
+        if (existing.length === 0) {
+            await db.insert(userStatsTable).values({
+                userId: user.id,
+                hunger: 100,
+                hydration: 100,
+                health: 100,
+                holding: 0,
+            });
+            console.log(`Created user_stats for ${user.firstName} ${user.lastName}`);
         }
     }
 };

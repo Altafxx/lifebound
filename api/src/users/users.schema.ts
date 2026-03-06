@@ -8,6 +8,7 @@ export const createUserSchema = z.object({
     lastName: z.string().min(1).max(255),
     ageOverride: z.number().int().min(0).optional(),
     gender: z.enum(["male", "female", "non-binary"]),
+    location: z.number().int().positive(), // state id
     birthPregnancyId: z.number().int().positive().optional(),
     isDeceased: z.boolean().default(false).optional(),
     createdAt: dateStringSchema.optional(),
@@ -19,6 +20,7 @@ export const updateUserSchema = z.object({
     lastName: z.string().min(1).max(255).optional(),
     ageOverride: z.number().int().min(0).optional(),
     gender: z.enum(["male", "female", "non-binary"]).optional(),
+    location: z.number().int().positive().optional(), // state id
     birthPregnancyId: z.number().int().positive().optional().nullable(),
     isDeceased: z.boolean().optional(),
     updatedAt: dateStringSchema.optional(),

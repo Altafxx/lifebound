@@ -20,6 +20,7 @@ function formToCreateBody(form: Record<string, string | undefined>): Record<stri
         lastName: form.lastName ?? "",
         ageOverride: form.ageOverride !== undefined && form.ageOverride !== "" ? Number(form.ageOverride) : undefined,
         gender: form.gender ?? "male",
+        location: form.location !== undefined && form.location !== "" ? Number(form.location) : undefined,
         birthPregnancyId: form.birthPregnancyId !== undefined && form.birthPregnancyId !== "" ? Number(form.birthPregnancyId) : undefined,
         isDeceased: form.isDeceased === "true" || form.isDeceased === "1",
     };
@@ -31,6 +32,7 @@ function formToUpdateBody(form: Record<string, string | undefined>): Record<stri
     if (form.lastName !== undefined && form.lastName !== "") body.lastName = form.lastName;
     if (form.ageOverride !== undefined && form.ageOverride !== "") body.ageOverride = Number(form.ageOverride);
     if (form.gender !== undefined && form.gender !== "") body.gender = form.gender;
+    if (form.location !== undefined && form.location !== "") body.location = Number(form.location);
     if (form.birthPregnancyId !== undefined) body.birthPregnancyId = form.birthPregnancyId === "" || form.birthPregnancyId === "null" ? null : Number(form.birthPregnancyId);
     if (form.isDeceased !== undefined && form.isDeceased !== "") body.isDeceased = form.isDeceased === "true" || form.isDeceased === "1";
     return body;
