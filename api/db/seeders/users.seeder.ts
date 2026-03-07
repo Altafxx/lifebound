@@ -9,11 +9,11 @@ import { db } from "$/db";
 import { eq, and } from "drizzle-orm";
 import type { CreateUserSchema } from "@/users/users.schema";
 import type { RelationshipSeedSchema } from "./schemas";
+import { SIMULATOR_START_DATE } from "@/lib/age";
 
-const SIMULATOR_START = "0001-01-01";
 const DEFAULT_LOCATION_STATE = "Selangor";
 
-const users: (CreateUserSchema & {
+const users: (Omit<CreateUserSchema, "location"> & {
     createdAt?: string;
     updatedAt?: string;
 })[] = [
@@ -22,16 +22,16 @@ const users: (CreateUserSchema & {
         lastName: "Adam",
         ageOverride: 10957, // ~30 years in days (30 * 365.25)
         gender: "male",
-        createdAt: SIMULATOR_START,
-        updatedAt: SIMULATOR_START,
+        createdAt: SIMULATOR_START_DATE,
+        updatedAt: SIMULATOR_START_DATE,
     },
     {
         firstName: "Eve",
         lastName: "Eve",
         ageOverride: 10227, // ~28 years in days (28 * 365.25)
         gender: "female",
-        createdAt: SIMULATOR_START,
-        updatedAt: SIMULATOR_START,
+        createdAt: SIMULATOR_START_DATE,
+        updatedAt: SIMULATOR_START_DATE,
     },
 ];
 
@@ -87,8 +87,8 @@ export const seedUsers = async () => {
                 ageOverride: user.ageOverride,
                 gender: user.gender,
                 location: locationId,
-                createdAt: SIMULATOR_START,
-                updatedAt: SIMULATOR_START,
+                createdAt: SIMULATOR_START_DATE,
+                updatedAt: SIMULATOR_START_DATE,
             }).returning();
             console.log(`Created user: ${user.firstName} ${user.lastName} (location: ${DEFAULT_LOCATION_STATE})`);
         } else {
@@ -188,7 +188,7 @@ export const seedUserRelationships = async () => {
                 objectUserId: objectUser.id,
                 type: relationship.type,
                 isBiological: relationship.isBiological ?? true,
-                createdAt: SIMULATOR_START,
+                createdAt: SIMULATOR_START_DATE,
             });
             console.log(
                 `Created ${relationship.type} relationship: ${relationship.subjectFirstName} ${relationship.subjectLastName} -> ${relationship.objectFirstName} ${relationship.objectLastName}`
