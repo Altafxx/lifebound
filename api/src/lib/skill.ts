@@ -14,22 +14,7 @@ import {
   countrySkillsTable,
 } from "$/schema";
 import { eq, and, sql } from "drizzle-orm";
-
-/** Max additional boost from country adoption (never exceed 30%). */
-export const MAX_ADOPTION_BOOST = 30;
-
-/**
- * Boost tiers: adoption rate threshold → additional success %.
- * Higher adoption = more boost, capped at MAX_ADOPTION_BOOST.
- */
-export const ADOPTION_BOOST_TIERS: { threshold: number; boost: number }[] = [
-  { threshold: 98, boost: 30 },
-  { threshold: 95, boost: 25 },
-  { threshold: 85, boost: 20 },
-  { threshold: 75, boost: 15 },
-  { threshold: 50, boost: 10 },
-  { threshold: 30, boost: 5 },
-];
+import { ADOPTION_BOOST_TIERS, MAX_ADOPTION_BOOST } from "./constants";
 
 /**
  * Get the country id for a user (via user.location → state → country).

@@ -3,54 +3,35 @@
  * Used by actions service and stats tick endpoint.
  */
 
-/** Success rate 0–100 for gathering food from state. */
-export const GATHER_SUCCESS_RATE = 70;
+import {
+  HEALTH_DECAY_PER_TICK,
+  HEALTH_REGEN_PER_TICK,
+  HUNGER_DECAY_PER_TICK,
+  HUNGER_HYDRATION_HIGH_THRESHOLD,
+  HUNGER_HYDRATION_LOW_THRESHOLD,
+  HYDRATION_DECAY_PER_TICK,
+} from "./constants";
 
-/** Success rate 0–100 for scavenging water from state. */
-export const SCAVENGE_WATER_SUCCESS_RATE = 60;
-
-/** Amount of food transferred from state to user on successful gather. */
-export const GATHER_FOOD_AMOUNT = 5;
-
-/** Amount of water transferred from state to user on successful scavenge. */
-export const SCAVENGE_WATER_AMOUNT = 5;
-
-/** Hunger increase per unit of food consumed (eat). Capped at 100. */
-export const HUNGER_PER_FOOD_UNIT = 10;
-
-/** Hydration increase per unit of water consumed (drink). Capped at 100. */
-export const HYDRATION_PER_WATER_UNIT = 10;
-
-/** Health decrease per tick when hunger or hydration is below threshold. */
-export const HEALTH_DECAY_PER_TICK = 2;
-
-/** Health increase per tick when both hunger and hydration above high threshold. */
-export const HEALTH_REGEN_PER_TICK = 2;
-
-/** Below this (0–100), health decays each tick. */
-export const HUNGER_HYDRATION_LOW_THRESHOLD = 30;
-
-/** Above this (0–100) for both, health regens each tick. */
-export const HUNGER_HYDRATION_HIGH_THRESHOLD = 90;
-
-/** Hunger/hydration decay per tick (optional). */
-export const HUNGER_DECAY_PER_TICK = 1;
-export const HYDRATION_DECAY_PER_TICK = 1;
-
-/** Hunger cost when performing gather (on success). */
-export const GATHER_HUNGER_COST = 2;
-/** Hydration cost when performing gather (on success). */
-export const GATHER_HYDRATION_COST = 2;
-
-/** Hunger cost when performing scavenge water (on success). */
-export const SCAVENGE_HUNGER_COST = 1;
-/** Hydration cost when performing scavenge water (on success). */
-export const SCAVENGE_HYDRATION_COST = 2;
-
-/** Hunger cost when performing mate (both partners). */
-export const MATE_HUNGER_COST = 3;
-/** Hydration cost when performing mate (both partners). */
-export const MATE_HYDRATION_COST = 3;
+export {
+  GATHER_FOOD_AMOUNT,
+  GATHER_HUNGER_COST,
+  GATHER_HYDRATION_COST,
+  GATHER_SUCCESS_RATE,
+  HEALTH_DECAY_PER_TICK,
+  HEALTH_REGEN_PER_TICK,
+  HUNGER_DECAY_PER_TICK,
+  HUNGER_HYDRATION_HIGH_THRESHOLD,
+  HUNGER_HYDRATION_LOW_THRESHOLD,
+  HUNGER_PER_FOOD_UNIT,
+  HYDRATION_DECAY_PER_TICK,
+  HYDRATION_PER_WATER_UNIT,
+  MATE_HUNGER_COST,
+  MATE_HYDRATION_COST,
+  SCAVENGE_HUNGER_COST,
+  SCAVENGE_HYDRATION_COST,
+  SCAVENGE_WATER_AMOUNT,
+  SCAVENGE_WATER_SUCCESS_RATE,
+} from "./constants";
 
 /**
  * Roll for success with a given rate (0–100).

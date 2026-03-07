@@ -5,13 +5,8 @@ import {
   countriesTable,
 } from "$/schema";
 import { eq, asc } from "drizzle-orm";
-import type { InferSelectModel } from "drizzle-orm";
+import type { Era, CountryWithEnteredAt } from "./eras.types";
 import { getCountryCurrentEra } from "@/lib/era";
-
-export type Era = InferSelectModel<typeof erasTable>;
-export type Country = InferSelectModel<typeof countriesTable>;
-
-export type CountryWithEnteredAt = Country & { enteredAt: string };
 
 export const erasService = {
   getEras: async (): Promise<Era[]> => {

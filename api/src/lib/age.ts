@@ -1,12 +1,10 @@
 /**
  * Simulator start date (YYYY-MM-DD). Used as epoch for age calculations.
  */
-export const SIMULATOR_START_DATE = "0001-01-01";
 
-/**
- * Days per year for age-in-years conversion (accounts for leap years).
- */
-export const DAYS_PER_YEAR = 365.25;
+import { DAYS_PER_YEAR, SIMULATOR_START_DATE } from "./constants";
+
+export { DAYS_PER_YEAR, SIMULATOR_START_DATE } from "./constants";
 
 /**
  * Calendar-aware days between two dates (respects leap years).

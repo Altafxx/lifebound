@@ -10,10 +10,8 @@ import {
   countryEraBoostsTable,
   erasTable,
 } from "$/schema";
-import { and, eq, desc } from "drizzle-orm";
-
-/** Default multiplier for era boost (e.g. 1.1 = 10% increase to regeneration). */
-export const ERA_BOOST_MULTIPLIER = 1.1;
+import { and, desc, eq } from "drizzle-orm";
+import { ERA_BOOST_MULTIPLIER } from "./constants";
 
 /**
  * Get the current era for a country (highest order era they have entered).

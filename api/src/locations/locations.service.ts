@@ -6,14 +6,7 @@ import {
   stateStatsTable,
 } from "$/schema";
 import { eq } from "drizzle-orm";
-import type { InferSelectModel } from "drizzle-orm";
-
-export type Continent = InferSelectModel<typeof continentsTable>;
-export type Country = InferSelectModel<typeof countriesTable>;
-export type State = InferSelectModel<typeof statesTable>;
-export type StateWithStats = State & {
-  stats: InferSelectModel<typeof stateStatsTable> | null;
-};
+import type { Continent, Country, State, StateWithStats } from "./locations.types";
 
 export const locationsService = {
   getContinents: async (): Promise<Continent[]> => {

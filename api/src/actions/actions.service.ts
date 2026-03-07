@@ -1,7 +1,13 @@
 import { db } from "$/db";
 import { usersTable, userStatsTable, stateStatsTable } from "$/schema";
 import { eq } from "drizzle-orm";
-import type { InferSelectModel } from "drizzle-orm";
+import type {
+  GatherResult,
+  ScavengeWaterResult,
+  EatResult,
+  DrinkResult,
+  TickResult,
+} from "./actions.types";
 import { usersService } from "@/users/users.service";
 import {
   rollSuccess,
@@ -20,9 +26,6 @@ import {
   computeNextUserStatsAfterTick,
 } from "@/lib/survival";
 
-type StateStatsRow = InferSelectModel<typeof stateStatsTable>;
-type UserStatsRow = InferSelectModel<typeof userStatsTable>;
-
 async function getUserWithStateAndStats(userId: number) {
   const [user] = await db.select().from(usersTable).where(eq(usersTable.id, userId)).limit(1);
   if (!user) return undefined;
@@ -39,13 +42,6 @@ async function getUserWithStateAndStats(userId: number) {
     .limit(1);
   return { user, stateStats: stateStats ?? undefined, userStats: userStats ?? undefined };
 }
-
-export type GatherResult = {
-  success: boolean;
-  foodGained?: number;
-  stateStats: StateStatsRow | null;
-  userStats: UserStatsRow | null;
-};
 
 export async function gather(userId: number): Promise<GatherResult> {
   const ctx = await getUserWithStateAndStats(userId);
@@ -93,13 +89,6 @@ export async function gather(userId: number): Promise<GatherResult> {
   };
 }
 
-export type ScavengeWaterResult = {
-  success: boolean;
-  waterGained?: number;
-  stateStats: StateStatsRow | null;
-  userStats: UserStatsRow | null;
-};
-
 export async function scavengeWater(userId: number): Promise<ScavengeWaterResult> {
   const ctx = await getUserWithStateAndStats(userId);
   if (!ctx || !ctx.stateStats || !ctx.userStats) {
@@ -146,8 +135,6 @@ export async function scavengeWater(userId: number): Promise<ScavengeWaterResult
   };
 }
 
-export type EatResult = { userStats: UserStatsRow };
-
 export async function eat(userId: number, amount: number): Promise<EatResult> {
   const ctx = await getUserWithStateAndStats(userId);
   if (!ctx?.userStats) {
@@ -166,8 +153,6 @@ export async function eat(userId: number, amount: number): Promise<EatResult> {
     .returning();
   return { userStats: updated! };
 }
-
-export type DrinkResult = { userStats: UserStatsRow };
 
 export async function drink(userId: number, amount: number): Promise<DrinkResult> {
   const ctx = await getUserWithStateAndStats(userId);
@@ -213,8 +198,6 @@ export async function mate(
   }
   return pregnancy;
 }
-
-export type TickResult = { userStats: UserStatsRow };
 
 export async function tickUserStats(
   userId: number,

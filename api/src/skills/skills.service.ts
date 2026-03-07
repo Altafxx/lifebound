@@ -7,25 +7,13 @@ import {
   knowledgesTable,
 } from "$/schema";
 import { eq, asc } from "drizzle-orm";
-import type { InferSelectModel } from "drizzle-orm";
-
-export type Skill = InferSelectModel<typeof skillsTable>;
-export type User = InferSelectModel<typeof usersTable>;
-
-export type SkillWithLearnedAt = Skill & { learnedAt: string };
-
-export type UserWithLearnedAt = Pick<
+import type {
+  Skill,
   User,
-  "id" | "firstName" | "lastName" | "gender" | "location" | "createdAt" | "updatedAt"
-> & { learnedAt: string };
-
-export type CountrySkillRow = {
-  skillId: number;
-  skillName: string;
-  knowledgeId: number;
-  knowledgeName: string;
-  peopleCount: number;
-};
+  SkillWithLearnedAt,
+  UserWithLearnedAt,
+  CountrySkillRow,
+} from "./skills.types";
 
 export const skillsService = {
   getSkills: async (opts?: { category?: string }): Promise<Skill[]> => {

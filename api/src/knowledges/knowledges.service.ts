@@ -5,14 +5,11 @@ import {
   countriesTable,
 } from "$/schema";
 import { eq, asc } from "drizzle-orm";
-import type { InferSelectModel } from "drizzle-orm";
-
-export type Knowledge = InferSelectModel<typeof knowledgesTable>;
-export type Country = InferSelectModel<typeof countriesTable>;
-
-export type CountryWithUnlockedAt = Country & { unlockedAt: string };
-
-export type KnowledgeWithUnlockedAt = Knowledge & { unlockedAt: string };
+import type {
+  Knowledge,
+  CountryWithUnlockedAt,
+  KnowledgeWithUnlockedAt,
+} from "./knowledges.types";
 
 export const knowledgesService = {
   getKnowledges: async (opts?: { category?: string }): Promise<Knowledge[]> => {

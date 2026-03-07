@@ -5,13 +5,7 @@ import {
   countriesTable,
 } from "$/schema";
 import { eq } from "drizzle-orm";
-import type { InferSelectModel } from "drizzle-orm";
-
-export type Achievement = InferSelectModel<typeof achievementsTable>;
-export type CountryAchievement = InferSelectModel<typeof countryAchievementsTable>;
-export type Country = InferSelectModel<typeof countriesTable>;
-
-export type CountryWithAchievedAt = Country & { achievedAt: string };
+import type { Achievement, CountryWithAchievedAt } from "./achievements.types";
 
 export const achievementsService = {
   getAchievements: async (): Promise<Achievement[]> => {
