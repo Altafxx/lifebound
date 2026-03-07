@@ -12,6 +12,22 @@ Documentation for working with the `api/` codebase in Cursor: structure, convent
 - **Validation:** Zod
 - **Entry:** `api/src/index.ts` — Hono app, `Bun.serve` on `PORT` (default 3000)
 
+### Domain terms and requirements
+
+| Term | Definition (short) | Requirements doc |
+|------|---------------------|------------------|
+| **Continent** | Top-level region (e.g. AF, AS, EU). | [glossary.md](./glossary.md#geography) |
+| **Country** | Nation; has states, achievements, eras, knowledge. | [glossary.md](./glossary.md#geography) |
+| **State** | Subdivision of a country; users have a `location` state. | [glossary.md](./glossary.md#geography) |
+| **State stats** | Per-state reserves and regeneration (water, food, land). | [glossary.md](./glossary.md#geography) |
+| **User** | Simulated person; has location, relationships, pregnancies. | [glossary.md](./glossary.md#people) |
+| **Era** | Time period (e.g. Stone Age, Modern Age). Countries enter eras; current era = highest order entered. | [glossary.md](./glossary.md#eras) |
+| **Achievement** | One-off milestone a country can earn (e.g. First Settlement). | [glossary.md](./glossary.md#achievements) |
+| **Knowledge** | Technology/skill a country can unlock (e.g. Fishing, Mining, Writing). | [glossary.md](./glossary.md#knowledge) |
+| **Country neighbor** | Two countries that are adjacent; used for era boosts. | [glossary.md](./glossary.md#adjacency) |
+
+Full definitions, how terms relate, and **requirements for achievements, eras, and knowledge** (what the API stores vs what the game enforces) are in **[glossary.md](./glossary.md)**.
+
 ---
 
 ## Project structure
@@ -109,8 +125,9 @@ bun run db:reset     # clear + seed
 
 | Doc | Contents |
 |-----|----------|
+| [glossary.md](./glossary.md) | **Definitions and requirements** for all terms (continent, country, state, user, era, achievement, knowledge); requirements for achievements, eras, knowledge |
 | [users.md](./users.md) | Users API endpoints, request/response schemas; GET relationships returns father, mother, spouse, children |
-| [locations-achievements-eras.md](./locations-achievements-eras.md) | Locations (continents, countries, states), achievements, and eras API |
+| [locations-achievements-eras.md](./locations-achievements-eras.md) | Locations (continents, countries, states), achievements, eras, knowledge API |
 | [db.md](./db.md) | Database schema (tables, relations), seeders, Drizzle config |
 | [lib.md](./lib.md) | Shared libs: errors, `lib/schemas`, `lib/pregnancy` |
 
