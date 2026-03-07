@@ -18,5 +18,5 @@ if (!parsed.success) {
 
 export const config = {
 	databaseUrl: parsed.data.DATABASE_URL,
-	port: parsed.data.PORT ?? 3000,
+	port: parsed.data.PORT ?? 5000,
 } as const;
