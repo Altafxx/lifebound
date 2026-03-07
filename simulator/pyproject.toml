@@ -1,0 +1,9 @@
+[project]
+name = "lifebound-simulator"
+version = "0.1.0"
+description = "SimPy-based daily simulation for Lifebound; drives the API with X-Simulator-Day."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "simpy>=4.1.0",
+]

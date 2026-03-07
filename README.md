@@ -1,6 +1,7 @@
 # Lifebound
 
 - **API:** Bun + Hono app in `api/`. See [api/README.md](api/README.md) for run instructions.
+- **Simulator:** SimPy + UV in `simulator/`. Daily-cycle scaffold; see [simulator/README.md](simulator/README.md) for `uv sync` and `uv run python main.py`.
 - **Docs:** Structure, conventions, and domain docs are in **[docs/api/](docs/api/)**. Start with [docs/api/docs.md](docs/api/docs.md) for the Cursor usage guide (project structure, path aliases, env/config, running, conventions).
 
 ## Data sources (locations seed)
