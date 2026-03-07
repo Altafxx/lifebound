@@ -1,6 +1,6 @@
-# Locations, achievements, and eras API
+# Locations, achievements, eras, and knowledge API
 
-Reference endpoints for continents, countries, states, achievements, and eras. Used by the simulator and admin tools.
+Reference endpoints for continents, countries, states, achievements, eras, and knowledge/technology progress. Used by the simulator and admin tools.
 
 ---
 
@@ -47,6 +47,21 @@ Reference endpoints for continents, countries, states, achievements, and eras. U
 | `GET` | `/countries/:id/era` | Get the current era for a country (highest `order` entered). Response: `{ currentEra: { eraId, enteredAt, eraOrder, eraName } \| null }` |
 
 **Responses:** JSON. 404 when era or country not found; 400 for invalid id.
+
+---
+
+## Knowledge (technology progress)
+
+Knowledge represents technologies/skills countries can unlock (e.g. fishing, mining, agriculture, writing). Distinct from **eras** (age progression) and **achievements** (one-off milestones).
+
+| Method | Path | Description |
+|--------|------|-------------|
+| `GET` | `/knowledge` | List all knowledge types (ordered by `order`). Optional query: `category` (e.g. `survival`, `industry`, `agriculture`, `craft`, `technology`, `culture`) to filter |
+| `GET` | `/knowledge/:id` | Get one knowledge by id |
+| `GET` | `/knowledge/:id/countries` | List countries that have unlocked this knowledge (each row includes `unlockedAt` date) |
+| `GET` | `/countries/:id/knowledge` | List knowledge unlocked by this country (each item includes `unlockedAt`) |
+
+**Responses:** JSON. 404 when knowledge or country not found; 400 for invalid id.
 
 ---
 
