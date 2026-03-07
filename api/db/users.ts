@@ -1,4 +1,4 @@
-import { pgTable, integer, bigint, smallint, varchar, boolean, pgEnum, date } from "drizzle-orm/pg-core";
+import { pgTable, integer, bigint, smallint, varchar, boolean, pgEnum, date, unique } from "drizzle-orm/pg-core";
 import { relations } from "drizzle-orm";
 import { statesTable } from "./locations";
 
@@ -33,18 +33,24 @@ export const userPregnanciesTable = pgTable("user_pregnancies", {
   updatedAt: date().notNull().default("0001-01-01"),
 });
 
-export const userRelationshipsTable = pgTable("user_relationships", {
-  id: integer().primaryKey().generatedAlwaysAsIdentity(),
-  // The person who "is" the relative (e.g., The Parent)
-  subjectUserId: integer().references(() => usersTable.id).notNull(),
-  // The person they are related to (e.g., The Child)
-  objectUserId: integer().references(() => usersTable.id).notNull(),
-  // Use the enum for consistency
-  type: relationTypeEnum().notNull(),
-  // Distinguish between Biological vs Step/Adoptive
-  isBiological: boolean().default(true).notNull(),
-  createdAt: date().notNull().default("0001-01-01"),
-});
+export const userRelationshipsTable = pgTable(
+  "user_relationships",
+  {
+    id: integer().primaryKey().generatedAlwaysAsIdentity(),
+    // The person who "is" the relative (e.g., The Parent)
+    subjectUserId: integer().references(() => usersTable.id).notNull(),
+    // The person they are related to (e.g., The Child)
+    objectUserId: integer().references(() => usersTable.id).notNull(),
+    // Use the enum for consistency
+    type: relationTypeEnum().notNull(),
+    // Distinguish between Biological vs Step/Adoptive
+    isBiological: boolean().default(true).notNull(),
+    createdAt: date().notNull().default("0001-01-01"),
+  },
+  (t) => ({
+    userRelationshipUnique: unique().on(t.subjectUserId, t.objectUserId, t.type),
+  })
+);
 
 export const userStatsTable = pgTable("user_stats", {
   id: bigint({ mode: "number" }).primaryKey().generatedAlwaysAsIdentity(),
@@ -55,7 +61,7 @@ export const userStatsTable = pgTable("user_stats", {
   hunger: smallint().notNull().default(100), // 0-100
   hydration: smallint().notNull().default(100), // 0-100
   health: smallint().notNull().default(100), // 0-100
-  holding: bigint({ mode: "number" }).notNull().default(0),
+  holding: bigint({ mode: "number" }).notNull().default(0), // amount of cash the person has
 });
 
 export const usersRelations = relations(usersTable, ({ many, one }) => ({

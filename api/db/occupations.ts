@@ -1,4 +1,4 @@
-import { pgTable, bigint, integer, text } from "drizzle-orm/pg-core";
+import { pgTable, bigint, integer, text, unique } from "drizzle-orm/pg-core";
 import { relations } from "drizzle-orm";
 import { usersTable, genderEnum } from "./users";
 
@@ -8,15 +8,21 @@ export const occupationsTable = pgTable("occupations", {
   genderSpecific: genderEnum("gender_specific"),
 });
 
-export const userOccupationsTable = pgTable("user_occupations", {
-  id: bigint({ mode: "number" }).primaryKey().generatedAlwaysAsIdentity(),
-  userId: integer()
-    .references(() => usersTable.id, { onDelete: "cascade" })
-    .notNull(),
-  occupationId: bigint({ mode: "number" })
-    .references(() => occupationsTable.id, { onDelete: "cascade" })
-    .notNull(),
-});
+export const userOccupationsTable = pgTable(
+  "user_occupations",
+  {
+    id: bigint({ mode: "number" }).primaryKey().generatedAlwaysAsIdentity(),
+    userId: integer()
+      .references(() => usersTable.id, { onDelete: "cascade" })
+      .notNull(),
+    occupationId: bigint({ mode: "number" })
+      .references(() => occupationsTable.id, { onDelete: "cascade" })
+      .notNull(),
+  },
+  (t) => ({
+    userOccupationUnique: unique().on(t.userId, t.occupationId),
+  })
+);
 
 export const occupationsRelations = relations(occupationsTable, ({ many }) => ({
   userOccupations: many(userOccupationsTable),
