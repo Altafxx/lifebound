@@ -1,6 +1,6 @@
-# Locations, achievements, eras, and knowledge API
+# Locations, achievements, eras, knowledge, and skills API
 
-Reference endpoints for continents, countries, states, achievements, eras, and knowledge/technology progress. Used by the simulator and admin tools.
+Reference endpoints for continents, countries, states, achievements, eras, knowledge/technology progress, and user skills. Used by the simulator and admin tools.
 
 ---
 
@@ -62,6 +62,22 @@ Knowledge represents technologies/skills countries can unlock (e.g. fishing, min
 | `GET` | `/countries/:id/knowledge` | List knowledge unlocked by this country (each item includes `unlockedAt`) |
 
 **Responses:** JSON. 404 when knowledge or country not found; 400 for invalid id.
+
+---
+
+## Skills (user-level)
+
+Skills are abilities that **users** learn (e.g. fishing, carpentry, hiking). Each skill requires the **country** to have a specific **knowledge** first (`skill.knowledgeId`). The more people in a country who have a skill, the easier it is for others there to learn it (`country_skills.peopleCount`). Learning logic is in `src/lib/skill.ts` (not wired to API yet).
+
+| Method | Path | Description |
+|--------|------|-------------|
+| `GET` | `/skills` | List all skills (ordered by `order`). Optional query: `category` (e.g. `survival`, `craft`, `agriculture`) to filter |
+| `GET` | `/skills/:id` | Get one skill by id. Optional query: `withKnowledge=true` to include `knowledgeName` |
+| `GET` | `/skills/:id/users` | List users who have this skill (each includes `learnedAt`) |
+| `GET` | `/users/:id/skills` | List skills this user has (each includes `learnedAt`) |
+| `GET` | `/countries/:id/skills` | List country_skills for this country (skill name, knowledge name, `peopleCount` for ease of learning) |
+
+**Responses:** JSON. 404 when skill, user, or country not found; 400 for invalid id.
 
 ---
 

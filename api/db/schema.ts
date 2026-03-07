@@ -4,3 +4,4 @@ export * from './occupations';
 export * from './achievements';
 export * from './eras';
 export * from './knowledges';
+export * from './skills';

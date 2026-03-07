@@ -24,9 +24,10 @@ Documentation for working with the `api/` codebase in Cursor: structure, convent
 | **Era** | Time period (e.g. Stone Age, Modern Age). Countries enter eras; current era = highest order entered. | [glossary.md](./glossary.md#eras) |
 | **Achievement** | One-off milestone a country can earn (e.g. First Settlement). | [glossary.md](./glossary.md#achievements) |
 | **Knowledge** | Technology/skill a country can unlock (e.g. Fishing, Mining, Writing). | [glossary.md](./glossary.md#knowledge) |
+| **Skill** | User-level ability (e.g. Fishing, Carpentry, Hiking); requires country to have matching knowledge. | [glossary.md](./glossary.md#skills) |
 | **Country neighbor** | Two countries that are adjacent; used for era boosts. | [glossary.md](./glossary.md#adjacency) |
 
-Full definitions, how terms relate, and **requirements for achievements, eras, and knowledge** (what the API stores vs what the game enforces) are in **[glossary.md](./glossary.md)**.
+Full definitions, how terms relate, and **requirements for achievements, eras, knowledge, and skills** (what the API stores vs what the game enforces) are in **[glossary.md](./glossary.md)**.
 
 ---
 
@@ -125,9 +126,9 @@ bun run db:reset     # clear + seed
 
 | Doc | Contents |
 |-----|----------|
-| [glossary.md](./glossary.md) | **Definitions and requirements** for all terms (continent, country, state, user, era, achievement, knowledge); requirements for achievements, eras, knowledge |
+| [glossary.md](./glossary.md) | **Definitions and requirements** for all terms (continent, country, state, user, era, achievement, knowledge, skill); requirements for achievements, eras, knowledge, skills |
 | [users.md](./users.md) | Users API endpoints, request/response schemas; GET relationships returns father, mother, spouse, children |
-| [locations-achievements-eras.md](./locations-achievements-eras.md) | Locations (continents, countries, states), achievements, eras, knowledge API |
+| [locations-achievements-eras.md](./locations-achievements-eras.md) | Locations, achievements, eras, knowledge, skills API |
 | [db.md](./db.md) | Database schema (tables, relations), seeders, Drizzle config |
 | [lib.md](./lib.md) | Shared libs: errors, `lib/schemas`, `lib/pregnancy` |
 

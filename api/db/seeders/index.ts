@@ -16,6 +16,7 @@ import {
     seedCountryNeighbors,
 } from "./achievements-eras.seeder";
 import { seedKnowledges, seedCountryKnowledges } from "./knowledges.seeder";
+import { seedSkills } from "./skills.seeder";
 import { db } from "$/db";
 import { sql } from "drizzle-orm";
 import {
@@ -37,6 +38,9 @@ import {
     erasTable,
     countryKnowledgesTable,
     knowledgesTable,
+    userSkillsTable,
+    countrySkillsTable,
+    skillsTable,
 } from "$/schema";
 
 export const seed = async () => {
@@ -56,6 +60,9 @@ export const seed = async () => {
     await seedKnowledges();
     await seedCountryKnowledges();
 
+    // 2c. Skills (after knowledges; skills require knowledgeId)
+    await seedSkills();
+
     // 3. Users (Adam & Eve at Selangor)
     await seedUsers();
     await seedUserStats();
@@ -67,6 +74,7 @@ export const seed = async () => {
 export const clear = async () => {
     // Delete in order respecting foreign key constraints
     // 1. User-dependent tables
+    await db.delete(userSkillsTable);
     await db.delete(userOccupationsTable);
     await db.delete(userStatsTable);
     await db.delete(userRelationshipsTable);
@@ -92,6 +100,7 @@ export const clear = async () => {
     await db.delete(countryErasTable);
     await db.delete(countryNeighborsTable);
     await db.delete(countryKnowledgesTable);
+    await db.delete(countrySkillsTable);
 
     // 8. Delete countries (references continents)
     await db.delete(countriesTable);
@@ -99,10 +108,11 @@ export const clear = async () => {
     // 9. Delete continents
     await db.delete(continentsTable);
 
-    // 10. Delete achievements, eras, knowledges (no FKs from others)
+    // 10. Delete achievements, eras, knowledges, skills (no FKs from others)
     await db.delete(achievementsTable);
     await db.delete(erasTable);
     await db.delete(knowledgesTable);
+    await db.delete(skillsTable);
 
     // 11. Delete occupations (no FKs from others)
     await db.delete(occupationsTable);
@@ -126,6 +136,9 @@ export const clear = async () => {
     await db.execute(sql`ALTER SEQUENCE country_era_boosts_id_seq RESTART WITH 1`);
     await db.execute(sql`ALTER SEQUENCE country_knowledges_id_seq RESTART WITH 1`);
     await db.execute(sql`ALTER SEQUENCE knowledges_id_seq RESTART WITH 1`);
+    await db.execute(sql`ALTER SEQUENCE skills_id_seq RESTART WITH 1`);
+    await db.execute(sql`ALTER SEQUENCE user_skills_id_seq RESTART WITH 1`);
+    await db.execute(sql`ALTER SEQUENCE country_skills_id_seq RESTART WITH 1`);
 
     console.log("Database cleared successfully");
 };

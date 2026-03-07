@@ -33,6 +33,9 @@ Definitions, overview, and requirements for all terms used in the Lifebound API 
 | **Era boost** | When a country advances to a new era, neighboring countries can receive a boost (stored in `country_era_boosts`). The boost can be applied to state stats (e.g. regeneration). Logic in `src/lib/era.ts`. |
 | **Achievement** | A one-off milestone a country can earn (e.g. “First Settlement”, “Trade Hub”). Has `id`, `name`, optional `description`. Stored globally; which country achieved it and when is in `country_achievements` (`achievedAt`). |
 | **Knowledge** | A technology or skill a country can unlock (e.g. Fishing, Mining, Agriculture, Writing). Has `id`, `name`, optional `description`, `category` (e.g. survival, industry, culture), and `order` for display. Which country unlocked it and when is in `country_knowledges` (`unlockedAt`). |
+| **Skill** | A user-level ability (e.g. Fishing, Carpentry, Hiking). Has `id`, `name`, optional `description`, `knowledgeId` (country must have this knowledge before any user can learn the skill), `order`, and optional `category`. Which user learned it and when is in `user_skills` (`learnedAt`). |
+| **User skill** | A record that a user learned a skill at a given simulator date (`user_skills`: `userId`, `skillId`, `learnedAt`). |
+| **Country skill** | Per-country count of users who have each skill (`country_skills`: `countryId`, `skillId`, `peopleCount`). Used for "ease of learning": more people with the skill in the country = easier to learn. Maintained when user_skills are added/removed (see `src/lib/skill.ts`). |
 
 ### Adjacency
 
@@ -53,18 +56,21 @@ Continents
         ├── Country achievements (countryId, achievementId)
         ├── Country knowledges (countryId, knowledgeId)
         ├── Country neighbors (countryId, neighborCountryId)
-        └── Country era boosts (countryId, sourceCountryId, eraId)
+        ├── Country era boosts (countryId, sourceCountryId, eraId)
+        └── Country skills (countryId, skillId, peopleCount)  → ease of learning
 
 Users (location → state)
   ├── User stats (userId)
   ├── User relationships (subjectUserId, objectUserId, type)
-  └── User pregnancies (userId)
+  ├── User pregnancies (userId)
+  └── User skills (userId, skillId, learnedAt)  → requires country to have skill.knowledgeId
 ```
 
 - **Eras** define the global timeline (order 1, 2, 3, …). Each country has a **current era** and a history of **country_eras**.
 - **Achievements** are global definitions; **country_achievements** record who achieved what and when.
 - **Knowledges** are global definitions; **country_knowledges** record which country unlocked which knowledge and when.
 - **Era boosts** are created when a country advances to a new era; they reference the advancing country, the neighbor that receives the boost, and the era.
+- **Skills** are user-level; each skill has a required **knowledge** (country must have that knowledge before anyone can learn the skill). **User skills** record who learned what and when; **country_skills** stores the count of people per country per skill for "ease of learning".
 
 ---
 
@@ -99,6 +105,19 @@ Users (location → state)
 | **Starting knowledges** | Seeder can give every country a few starting knowledges (e.g. Fire, Gathering). Configurable via `STARTING_KNOWLEDGE_NAMES` in `knowledges.seeder.ts`. |
 | **Data** | Seed data inserts a fixed list of knowledges (Fire, Gathering, Hunting, Fishing, Mining, Agriculture, Writing, etc.) and optionally seeds starting country_knowledges for all countries. |
 
+### Skills
+
+| Aspect | Requirement / behavior |
+|--------|------------------------|
+| **Definition** | Skills are global records in `skills` with `name`, optional `description`, `knowledgeId` (FK to knowledges), optional `prerequisiteSkillId` (another skill the user must have first), `baseSuccessRate` (0–100), `order`, and optional `category`. Each skill requires the **country** to have that knowledge before any user there can learn it. |
+| **Learning** | A user can learn a skill only if (1) their country has the knowledge for that skill (`country_knowledges`), and (2) they don’t already have it. Logic: `canUserLearnSkill(userId, skillId)` and `learnSkill(userId, skillId, simulatorDate)` in `src/lib/skill.ts`. **Not wired to API yet** — no POST endpoint; call from simulator or future API. |
+| **Prerequisites** | If `prerequisiteSkillId` is set, the user must already have that skill before attempting to learn this one. Enforced by `canUserLearnSkill` and `attemptLearnSkill`. |
+| **Success rate** | Learning is probabilistic. Each skill has `baseSuccessRate` (0–100). Effective rate = base + adoption boost (boost capped at 30%). Use `attemptLearnSkill(userId, skillId, simulatorDate)` — rolls random; if success, records the skill. `learnSkill` forces success (for testing). |
+| **Boost tiers** | Adoption = % of users in country who have the skill. Tiers: ≥30% → +5%, ≥50% → +10%, ≥75% → +15%, ≥85% → +20%, ≥95% → +25%, ≥98% → +30% (max). See `ADOPTION_BOOST_TIERS` in `src/lib/skill.ts`. |
+| **Ease of learning** | The more people in the country who have the skill, the easier it is to learn. Stored as `country_skills.peopleCount`. Read with `getEaseOfLearningSkill(countryId, skillId)`. Updated automatically when `learnSkill` / `unlearnSkill` is called. |
+| **Uniqueness** | At most one row per (userId, skillId) in `user_skills`; at most one row per (countryId, skillId) in `country_skills`. |
+| **Data** | Seed data inserts skill types (Fishing, Carpentry, Hiking, etc.) with `knowledgeId` pointing to knowledges. No user_skills or country_skills seeded; those are created when users learn skills. |
+
 ---
 
 ## Summary table
@@ -108,5 +127,6 @@ Users (location → state)
 | **Era** | Eras list; country_eras; country_era_boosts | No (who can advance) | Game/simulator; `advanceCountryToEra` records the result |
 | **Achievement** | Achievements list; country_achievements | No | Game/simulator decides when to insert country_achievements |
 | **Knowledge** | Knowledges list; country_knowledges | No (no prerequisites in schema) | Game/simulator can enforce prerequisites before insert |
+| **Skill** | Skills list; user_skills; country_skills | Yes (in lib): country knowledge, user prerequisite, probabilistic `attemptLearnSkill`; no API endpoint yet | `src/lib/skill.ts`: `canUserLearnSkill`, `attemptLearnSkill`, `learnSkill`; boost tiers in `ADOPTION_BOOST_TIERS` |
 
 For more detail on tables and fields, see [db.md](./db.md). For endpoints, see [locations-achievements-eras.md](./locations-achievements-eras.md) and [users.md](./users.md).
