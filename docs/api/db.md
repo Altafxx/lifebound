@@ -37,6 +37,13 @@ Defined in `db/users.ts` and `db/locations.ts`; re-exported from `db/schema.ts` 
   - `countryId` — FK → `countries.id`, not null, on delete cascade
   - `name` — text, not null. Seed data includes Malaysia only (13 states + 3 federal territories).
 
+- **`state_stats`**
+  - `id` — bigint identity PK
+  - `stateId` — FK → `states.id`, not null, unique (one row per state)
+  - `waterReserve`, `foodReserve`, `landReserve` — bigint, not null, default 0. **Current** live values (consumed by users or regen adds to these).
+  - `waterMax`, `foodMax`, `landMax` — bigint, not null, default 1000. Caps for reserves; regen clamps to these.
+  - `waterRegeneration`, `foodRegeneration` — bigint, not null, default 0. Amount added per regen tick (see POST `/states/:id/stats/regen`).
+
 - **`users`**
   - `id` — identity PK
   - `birthPregnancyId` — FK → `user_pregnancies.id` (nullable)
@@ -71,6 +78,14 @@ Defined in `db/users.ts` and `db/locations.ts`; re-exported from `db/schema.ts` 
 
   So: **subject** = “the one who has the role”, **object** = “the one they’re linked to”. For parent, subject is always the parent and object is the child.
   - **Note:** The GET `/users/:id/relationships` API only considers rows with `type` in `parent` and `spouse`; guardian is ignored for that endpoint.
+
+- **`user_stats`**
+  - `id` — bigint identity PK
+  - `userId` — FK → `users.id`, not null, unique (one row per user)
+  - `hunger`, `hydration`, `health` — smallint 0–100, not null, default 100
+  - `holding` — bigint, not null, default 0 (e.g. cash)
+  - `food` — bigint, not null, default 0. Amount of food the user is carrying (increased by gather, decreased by eat).
+  - `water` — bigint, not null, default 0. Amount of water the user is carrying (increased by scavenge water, decreased by drink).
 
 ### Relations (Drizzle relations)
 

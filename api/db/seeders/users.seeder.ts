@@ -124,6 +124,8 @@ export const seedUserStats = async () => {
                 hydration: 100,
                 health: 100,
                 holding: 0,
+                food: 0,
+                water: 0,
             });
             console.log(`Created user_stats for ${user.firstName} ${user.lastName}`);
         }

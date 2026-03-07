@@ -152,11 +152,14 @@ export const seedStates = async () => {
   console.log(`States seeded: ${MALAYSIA_STATES.length} (Malaysia only)`);
 };
 
-/** Default stats per state: reserves and regeneration rates. */
+/** Default stats per state: reserves, max caps, and regeneration rates. */
 const DEFAULT_STATE_STATS = {
   waterReserve: 1000,
   landReserve: 1000,
   foodReserve: 1000,
+  waterMax: 1000,
+  foodMax: 1000,
+  landMax: 1000,
   waterRegeneration: 10,
   foodRegeneration: 10,
 };

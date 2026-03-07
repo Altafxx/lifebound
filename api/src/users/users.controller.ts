@@ -2,16 +2,7 @@ import { Hono } from "hono";
 import { usersService } from "./users.service";
 import { getErrorMessage } from "@/errors";
 import { createUserSchema, updateUserSchema } from "./users.schema";
-import { SIMULATOR_DAY_HEADER, simulatorDateHeaderSchema } from "@/lib/schemas";
-import { SIMULATOR_START_DATE } from "@/lib/age";
-
-const usersRouter = new Hono();
-
-function getSimulatorDate(headerValue: string | undefined): string {
-    if (headerValue === undefined || headerValue === "") return SIMULATOR_START_DATE;
-    const result = simulatorDateHeaderSchema.safeParse(headerValue);
-    return result.success ? result.data : SIMULATOR_START_DATE;
-}
+import { SIMULATOR_DAY_HEADER, getSimulatorDate } from "@/lib/schemas";
 
 /** Parse form body (all values string) into typed object for create/update. */
 function formToCreateBody(form: Record<string, string | undefined>): Record<string, unknown> {
@@ -37,6 +28,8 @@ function formToUpdateBody(form: Record<string, string | undefined>): Record<stri
     if (form.isDeceased !== undefined && form.isDeceased !== "") body.isDeceased = form.isDeceased === "true" || form.isDeceased === "1";
     return body;
 }
+
+const usersRouter = new Hono();
 
 usersRouter.get("/users", async (c) => {
     try {

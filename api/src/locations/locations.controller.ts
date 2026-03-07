@@ -118,4 +118,24 @@ locationsRouter.get("/states/:id", async (c) => {
   }
 });
 
+locationsRouter.post("/states/:id/stats/regen", async (c) => {
+  try {
+    const id = c.req.param("id");
+    const numericId = Number(id);
+    if (Number.isNaN(numericId)) {
+      return c.json({ error: "Invalid state id" }, 400);
+    }
+    const updated = await locationsService.regenStateStats(numericId);
+    if (!updated) {
+      return c.json({ error: "State or state stats not found" }, 404);
+    }
+    return c.json(updated);
+  } catch (error) {
+    if (error instanceof Error) {
+      return c.json({ error: error.message }, 500);
+    }
+    return c.json({ error: getErrorMessage(500) }, 500);
+  }
+});
+
 export default locationsRouter;

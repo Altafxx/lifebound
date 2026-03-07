@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { SIMULATOR_START_DATE } from "@/lib/age";
 
 export const daysSchema = z.object({
     days: z.number().int().min(0),
@@ -18,3 +19,13 @@ export const simulatorDateHeaderSchema = z
 export type SimulatorDateHeader = z.infer<typeof simulatorDateHeaderSchema>;
 
 export const SIMULATOR_DAY_HEADER = "x-simulator-day";
+
+/**
+ * Parse current simulator day from request header (X-Simulator-Day).
+ * Returns SIMULATOR_START_DATE if header is missing or invalid.
+ */
+export function getSimulatorDate(headerValue: string | undefined): string {
+    if (headerValue === undefined || headerValue === "") return SIMULATOR_START_DATE;
+    const result = simulatorDateHeaderSchema.safeParse(headerValue);
+    return result.success ? result.data : SIMULATOR_START_DATE;
+}

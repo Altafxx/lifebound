@@ -41,8 +41,9 @@ Shared Zod schemas used across domains.
 - **`simulatorDateHeaderSchema`** — validates `X-Simulator-Day` header value as **YYYY-MM-DD** date string.
 - **`SIMULATOR_DAY_HEADER`** — constant `"x-simulator-day"` (header name).
 - **`SimulatorDateHeader`** — type inferred from `simulatorDateHeaderSchema`.
+- **`getSimulatorDate(headerValue)`** — parses the `X-Simulator-Day` header; returns the parsed date string or `SIMULATOR_START_DATE` if missing/invalid. Use in any controller that needs the current simulator day (e.g. users, actions).
 
-Use `simulatorDateHeaderSchema` and `SIMULATOR_DAY_HEADER` in controllers that need the current simulator date from the request.
+Use `simulatorDateHeaderSchema`, `SIMULATOR_DAY_HEADER`, and `getSimulatorDate` in controllers that need the current simulator date from the request.
 
 ---
 
@@ -86,3 +87,16 @@ Pregnancy probability and gestation used by the users domain (e.g. conceiving en
   - 2%: 314–375
 
 Use these helpers when adding or changing pregnancy-related behavior (e.g. new conceiving or pregnancy endpoints).
+
+---
+
+## Survival
+
+**Module:** `src/lib/survival.ts`
+
+Success rates and constants for gather/scavenge; health/hunger/hydration tick rules used by the actions domain and stats tick endpoint.
+
+- **Constants:** `GATHER_SUCCESS_RATE` (70), `SCAVENGE_WATER_SUCCESS_RATE` (60), `GATHER_FOOD_AMOUNT`, `SCAVENGE_WATER_AMOUNT`, `HUNGER_PER_FOOD_UNIT`, `HYDRATION_PER_WATER_UNIT`, `HEALTH_DECAY_PER_TICK`, `HEALTH_REGEN_PER_TICK`, `HUNGER_HYDRATION_LOW_THRESHOLD` (30), `HUNGER_HYDRATION_HIGH_THRESHOLD` (90), `HUNGER_DECAY_PER_TICK`, `HYDRATION_DECAY_PER_TICK`.
+- **Action costs (hunger/hydration deducted when performing the action):** `GATHER_HUNGER_COST`, `GATHER_HYDRATION_COST`, `SCAVENGE_HUNGER_COST`, `SCAVENGE_HYDRATION_COST`, `MATE_HUNGER_COST`, `MATE_HYDRATION_COST`.
+- **`rollSuccess(rate)`** — returns true with probability rate/100 (rate 0–100).
+- **`computeNextUserStatsAfterTick(current, options?)`** — given current `{ hunger, hydration, health }`, returns next values: health decays if hunger or hydration &lt; 30; health regens if both &gt; 90; optional hunger/hydration decay. Used by `POST /users/:id/stats/tick` and `POST /user-stats/tick`.

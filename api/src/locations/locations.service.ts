@@ -85,4 +85,31 @@ export const locationsService = {
       stats: statsRows[0] ?? null,
     };
   },
+
+  /** Regenerate state stats: add waterRegeneration/foodRegeneration to reserves, clamped to max. */
+  regenStateStats: async (stateId: number) => {
+    const [row] = await db
+      .select()
+      .from(stateStatsTable)
+      .where(eq(stateStatsTable.stateId, stateId))
+      .limit(1);
+    if (!row) return undefined;
+    const newWaterReserve = Math.min(
+      Number(row.waterReserve) + Number(row.waterRegeneration),
+      Number(row.waterMax)
+    );
+    const newFoodReserve = Math.min(
+      Number(row.foodReserve) + Number(row.foodRegeneration),
+      Number(row.foodMax)
+    );
+    const [updated] = await db
+      .update(stateStatsTable)
+      .set({
+        waterReserve: newWaterReserve,
+        foodReserve: newFoodReserve,
+      })
+      .where(eq(stateStatsTable.stateId, stateId))
+      .returning();
+    return updated;
+  },
 };

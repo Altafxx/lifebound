@@ -50,7 +50,7 @@ Only **parent** and **spouse** relationship types are used. Rows are selected fr
 
 | Method | Path                                | Description |
 |--------|-------------------------------------|-------------|
-| `GET`  | `/users/conceiving/:userId/:userId2` | Try to create a pregnancy between two users (male + female). Uses [lib/pregnancy](./lib.md#pregnancy). Optional `X-Simulator-Day` for `createdAt`/`updatedAt`. Returns new pregnancy or 400. |
+| `GET`  | `/users/conceiving/:userId/:userId2` | Try to create a pregnancy between two users (male + female). **Both must be spouses.** Uses [lib/pregnancy](./lib.md#pregnancy). Optional `X-Simulator-Day` for `createdAt`/`updatedAt`. Returns new pregnancy or 400. |
 | `GET`  | `/users/:id/pregnancy`              | Get current (incomplete) pregnancy for user. Uses `X-Simulator-Day` (no query param). |
 
 Error responses: JSON `{ "error": "message" }` with appropriate status (4xx/5xx).

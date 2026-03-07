@@ -62,6 +62,8 @@ export const userStatsTable = pgTable("user_stats", {
   hydration: smallint().notNull().default(100), // 0-100
   health: smallint().notNull().default(100), // 0-100
   holding: bigint({ mode: "number" }).notNull().default(0), // amount of cash the person has
+  food: bigint({ mode: "number" }).notNull().default(0), // amount of food user is carrying (gather → eat)
+  water: bigint({ mode: "number" }).notNull().default(0), // amount of water user is carrying (scavenge → drink)
 });
 
 export const usersRelations = relations(usersTable, ({ many, one }) => ({

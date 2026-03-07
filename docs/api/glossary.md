@@ -13,14 +13,14 @@ Definitions, overview, and requirements for all terms used in the Lifebound API 
 | **Continent** | A top-level geographic region. Identified by `id`, `name`, and unique `code` (e.g. AF, AS, EU). Countries belong to at most one continent. |
 | **Country** | A sovereign or simulated nation. Has `id`, `name`, ISO codes (`isoA2`, `isoA3`, `isoNumber`), optional `continentId`, and can have states, achievements, eras, and knowledge. |
 | **State** | A subdivision of a country (e.g. Malaysian states). Has `id`, `name`, and `countryId`. Users have a `location` that references a state. Seed data includes Malaysia only (13 states + 3 federal territories). |
-| **State stats** | Per-state resource and regeneration values: `waterReserve`, `landReserve`, `foodReserve`, `waterRegeneration`, `foodRegeneration`. One row per state (`state_stats`). |
+| **State stats** | Per-state resource and regeneration: `waterReserve`, `foodReserve`, `landReserve` (current), `waterMax`, `foodMax`, `landMax` (caps), `waterRegeneration`, `foodRegeneration`. One row per state (`state_stats`). |
 
 ### People
 
 | Term | Definition |
 |------|------------|
 | **User** | A simulated person. Has `firstName`, `lastName`, `gender`, `location` (state id), optional `ageOverride`, `birthPregnancyId`, `isDeceased`, and simulator dates `createdAt` / `updatedAt`. |
-| **User stats** | Per-user vitality: `hunger`, `hydration`, `health`, `holding`. One row per user (`user_stats`). |
+| **User stats** | Per-user vitality: `hunger`, `hydration`, `health` (0–100), `holding`, and inventory `food`, `water` (amounts carried; gather/scavenge add, eat/drink consume). One row per user (`user_stats`). |
 | **Relationship** | A link between two users: `parent`, `spouse`, or `guardian`. Stored as subject user → object user with `type` and `isBiological`. |
 | **Pregnancy** | A pregnancy record for a user (the mother), with `gestationPeriod`, `isCompleted`, and simulator dates. |
 

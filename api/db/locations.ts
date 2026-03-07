@@ -40,6 +40,9 @@ export const stateStatsTable = pgTable("state_stats", {
   waterReserve: bigint({ mode: "number" }).notNull().default(0),
   landReserve: bigint({ mode: "number" }).notNull().default(0),
   foodReserve: bigint({ mode: "number" }).notNull().default(0),
+  waterMax: bigint({ mode: "number" }).notNull().default(1000),
+  foodMax: bigint({ mode: "number" }).notNull().default(1000),
+  landMax: bigint({ mode: "number" }).notNull().default(1000),
   waterRegeneration: bigint({ mode: "number" }).notNull().default(0),
   foodRegeneration: bigint({ mode: "number" }).notNull().default(0),
 });

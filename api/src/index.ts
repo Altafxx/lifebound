@@ -6,6 +6,7 @@ import achievementsRouter from "./achievements/achievements.controller";
 import erasRouter from "./eras/eras.controller";
 import knowledgesRouter from "./knowledges/knowledges.controller";
 import skillsRouter from "./skills/skills.controller";
+import actionsRouter from "./actions/actions.controller";
 
 const app = new Hono();
 
@@ -19,6 +20,7 @@ app.route("/", achievementsRouter);
 app.route("/", erasRouter);
 app.route("/", knowledgesRouter);
 app.route("/", skillsRouter);
+app.route("/", actionsRouter);
 
 export default app;
 

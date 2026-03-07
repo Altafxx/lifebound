@@ -37,6 +37,8 @@ export const usersService = {
             hydration: 100,
             health: 100,
             holding: 0,
+            food: 0,
+            water: 0,
         });
         return newUser;
     },
@@ -131,6 +133,17 @@ export const usersService = {
         }
         if (!user2Result) {
             throw new Error(`User with id ${userId2} not found`);
+        }
+
+        // Both users must be spouses (enforced for both GET conceiving and POST mate).
+        const [relA, relB] = await Promise.all([
+            usersService.getUserRelationships(userId),
+            usersService.getUserRelationships(userId2),
+        ]);
+        const isASpouseOfB = relA.spouse?.id === userId2;
+        const isBSpouseOfA = relB.spouse?.id === userId;
+        if (!isASpouseOfB || !isBSpouseOfA) {
+            throw new Error("Both users must be spouses to conceive");
         }
 
         // Check that neither user is non-binary

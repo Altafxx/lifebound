@@ -128,6 +128,7 @@ bun run db:reset     # clear + seed
 |-----|----------|
 | [glossary.md](./glossary.md) | **Definitions and requirements** for all terms (continent, country, state, user, era, achievement, knowledge, skill); requirements for achievements, eras, knowledge, skills |
 | [users.md](./users.md) | Users API endpoints, request/response schemas; GET relationships returns father, mother, spouse, children |
+| [actions.md](./actions.md) | Survival actions (gather, scavenge water, eat, drink, mate), state stats regen, user stats tick |
 | [locations-achievements-eras.md](./locations-achievements-eras.md) | Locations, achievements, eras, knowledge, skills API |
 | [db.md](./db.md) | Database schema (tables, relations), seeders, Drizzle config |
 | [lib.md](./lib.md) | Shared libs: errors, `lib/schemas`, `lib/pregnancy` |
