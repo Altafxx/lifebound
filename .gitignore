@@ -2,7 +2,5 @@
 postman/*
 ChartDB(Lifebound).json
 schema.dbml
+.vscode/
 
-# Simulator (UV + Python)
-simulator/.venv/
-simulator/__pycache__/

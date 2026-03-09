@@ -1,5 +1,12 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Map SVG resources
+
+Map assets in this app are based on or sourced from:
+
+- **[BlankMap-World.svg](https://commons.wikimedia.org/wiki/File:BlankMap-World.svg)** (Wikimedia Commons) — Robinson projection world map (2,754×1,398), human-editable SVG with country grouping and optional circles for small territories. Public domain. Used as the base for the world map in `src/static/world.tsx`.
+- **[MapSVG](https://mapsvg.com)** — Map SVG templates and tools (e.g. country/region maps). The Malaysia map in `src/static/malaysia.tsx` is derived from a MapSVG-style source.
+
 ## Getting Started
 
 First, run the development server:
